@@ -1,0 +1,24 @@
+# auto: true
+
+markdown: kramdown
+highlighter: rouge
+paginate: 8
+permalink: /:title
+encoding: UTF-8
+gems: [jekyll-paginate]
+
+title: jjAugust Blog
+url: http://jjAugust.github.io
+feed: /atom.xml
+author_info: <a href="http://jjAugust.github.io/">jjAugust</a>
+
+myblog:
+  gavatar: images/02.png
+  gpname: jjAugust
+  linkedin:  
+  github: https://github.com/jjAugust
+  email: mailto:junjie.sop@gmail.com
+  coverimgs: []
+  postbgimg: []
+
+categories: [resume,jjAugust]
