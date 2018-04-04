@@ -2,7 +2,7 @@
 category: work
 published: true
 layout: post
-title: 读书笔记_1月第一周Report
+title: 读书笔记_读书笔记
 description: read more.
 ---
 #  WeekReport
