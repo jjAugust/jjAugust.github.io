@@ -1,0 +1,748 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>2018-05-12 20-45-48-report.md</title><link href='http://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext' rel='stylesheet' type='text/css' /><link href='http://fonts.googleapis.com/css?family=Lato:900,300&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}.CodeMirror { height: auto; }
+.CodeMirror-scroll { overflow-y: hidden; overflow-x: auto; }
+.CodeMirror-lines { padding: 4px 0px; }
+.CodeMirror pre { }
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { background-color: white; }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-color: rgb(247, 247, 247); white-space: nowrap; }
+.CodeMirror-linenumbers { }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.CodeMirror div.CodeMirror-cursor { border-left-width: 1px; border-left-style: solid; border-left-color: black; z-index: 3; }
+.CodeMirror div.CodeMirror-secondarycursor { border-left-width: 1px; border-left-style: solid; border-left-color: silver; }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: 0px; background-color: rgb(119, 238, 119); z-index: 1; background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite { }
+.cm-tab { display: inline-block; }
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property { color: rgb(217, 79, 138); }
+.cm-s-typora-default pre.cm-header1:not(.cm-atom) :not(.cm-overlay) { font-size: 2rem; line-height: 2rem; }
+.cm-s-typora-default pre.cm-header2:not(.cm-atom) :not(.cm-overlay) { font-size: 1.4rem; line-height: 1.4rem; }
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number { color: rgb(149, 132, 134); }
+.cm-s-typora-default .cm-table-row, .cm-s-typora-default .cm-block-start { font-family: monospace; }
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code { color: rgb(74, 90, 159); font-family: monospace; }
+.cm-s-typora-default .cm-tag { color: rgb(169, 68, 66); }
+.cm-s-typora-default .cm-string { color: rgb(126, 134, 169); }
+.cm-s-typora-default .cm-link { color: rgb(196, 122, 15); text-decoration: underline; }
+.cm-s-typora-default .cm-variable-2, .cm-s-typora-default .cm-variable-1 { color: inherit; }
+.cm-s-typora-default .cm-overlay { font-family: monospace; }
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor { border-left-width: 3px; border-left-style: solid; border-left-color: rgb(228, 98, 154); }
+.cm-s-typora-default .CodeMirror-activeline-background { left: -60px; right: -30px; background-color: rgba(204, 204, 204, 0.2); background-position: initial initial; background-repeat: initial initial; }
+.cm-s-typora-default .CodeMirror-gutters { border-right-style: none; background-color: inherit; }
+.cm-s-typora-default .cm-trailing-space-new-line::after, .cm-startspace::after, .cm-starttab .cm-tab::after { content: '•'; position: absolute; left: 0px; opacity: 0; font-family: LetterGothicStd, monospace; }
+.os-windows .cm-startspace::after, .os-windows .cm-starttab .cm-tab::after { left: -0.1em; }
+.cm-starttab .cm-tab::after { content: " "; }
+.cm-startspace, .cm-tab, .cm-starttab, .cm-trailing-space-a, .cm-trailing-space-b, .cm-trailing-space-new-line { font-family: monospace; position: relative; }
+.cm-s-typora-default .cm-trailing-space-new-line::after { content: '↓'; opacity: 0.3; }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: black; }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-property { color: black; }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: blue; }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: bold; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: rgb(255, 0, 0); }
+.cm-invalidchar { color: rgb(255, 0, 0); }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; padding-right: 30px; height: 100%; outline: none; position: relative; box-sizing: content-box; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow-x: hidden; overflow-y: scroll; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow-y: hidden; overflow-x: scroll; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background-image: none !important; border: none !important; background-position: initial initial !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; background-color: transparent; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-widget { }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.CodeMirror-selected { background-color: rgb(217, 217, 217); background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror-focused .CodeMirror-selected { background-color: rgb(215, 212, 240); background-position: initial initial; background-repeat: initial initial; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror span { }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+.CodeMirror-lint-markers { width: 16px; }
+.CodeMirror-lint-tooltip { background-color: infobackground; border: 1px solid black; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; color: infotext; font-family: monospace; overflow: hidden; padding: 2px 5px; position: fixed; white-space: pre-wrap; z-index: 10000; max-width: 600px; opacity: 0; transition: opacity 0.4s; font-size: 0.8em; }
+.CodeMirror-lint-mark-error, .CodeMirror-lint-mark-warning { background-position: left bottom; background-repeat: repeat no-repeat; }
+.CodeMirror-lint-mark-error { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg==); }
+.CodeMirror-lint-marker-error, .CodeMirror-lint-marker-warning { cursor: pointer; display: inline-block; height: 16px; width: 16px; vertical-align: middle; position: relative; background-position: center center; background-repeat: no-repeat no-repeat; }
+.CodeMirror-lint-message-error, .CodeMirror-lint-message-warning { padding-left: 18px; background-position: left top; background-repeat: no-repeat no-repeat; }
+.CodeMirror-lint-marker-error, .CodeMirror-lint-message-error { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEW7AAC7AACxAAC7AAC7AAAAAAC4AAC5AAD///+7AAAUdclpAAAABnRSTlMXnORSiwCK0ZKSAAAATUlEQVR42mWPOQ7AQAgDuQLx/z8csYRmPRIFIwRGnosRrpamvkKi0FTIiMASR3hhKW+hAN6/tIWhu9PDWiTGNEkTtIOucA5Oyr9ckPgAWm0GPBog6v4AAAAASUVORK5CYII=); }
+.CodeMirror-lint-marker-warning, .CodeMirror-lint-message-warning { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEX/uwDvrwD/uwD/uwD/uwD/uwD/uwD/uwD/uwD6twD/uwAAAADurwD2tQD7uAD+ugAAAAD/uwDhmeTRAAAADHRSTlMJ8mN1EYcbmiixgACm7WbuAAAAVklEQVR42n3PUQqAIBBFUU1LLc3u/jdbOJoW1P08DA9Gba8+YWJ6gNJoNYIBzAA2chBth5kLmG9YUoG0NHAUwFXwO9LuBQL1giCQb8gC9Oro2vp5rncCIY8L8uEx5ZkAAAAASUVORK5CYII=); }
+.CodeMirror-lint-marker-multiple { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAACVBMVEUAAAAAAAC/v7914kyHAAAAAXRSTlMAQObYZgAAACNJREFUeNo1ioEJAAAIwmz/H90iFFSGJgFMe3gaLZ0od+9/AQZ0ADosbYraAAAAAElFTkSuQmCC); width: 100%; height: 100%; background-position: right bottom; background-repeat: no-repeat no-repeat; }
+
+
+:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background-color: rgb(181, 214, 252); text-shadow: none; background-position: initial initial; background-repeat: initial initial; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+input, button, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background-color: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; background-position: initial initial; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print { 
+  html, body { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0mm; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+.md-tag { opacity: 0.5; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: monospace; }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-print-anchor { border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background-color: transparent !important; text-shadow: initial !important; background-position: initial initial !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+
+
+@include-when-export url(http://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext);
+@include-when-export url(http://fonts.googleapis.com/css?family=Lato:900,300&subset=latin-ext);
+
+:root {
+	--control-text-color: #777;
+}
+
+/**
+ * forked from pixyll.com
+ * MIT license
+ */
+
+@charset "UTF-8";
+@font-face {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Merriweather Light'), local('Merriweather-Light'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-Light.ttf);
+}
+@font-face {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Merriweather Heavy'), local('Merriweather-Heavy'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-Bold.ttf);
+}
+@font-face {
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-LightItalic.ttf);
+}
+@font-face {
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: 900;
+	src: local('Merriweather Heavy Italic'), local('Merriweather-HeavyItalic'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Lato Light'), local('Lato-Light'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-Light.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Lato Black'), local('Lato-Blcak'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-Black.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Lato Black'), local('Lato-Blcak'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-Black.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: 900;
+	src: local('Lato BlackItalic'), local('Lato-BlackItalic'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-BlackItalic.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Lato BlackItalic'), local('Lato-BlackItalic'), url(file:///Users/xiongjunjie/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-BlackItalic.ttf);
+}
+
+h1,
+.h1,
+.f1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+h2,
+.h2,
+.f2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+h3,
+.h3,
+.f3 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+p,
+.p,
+.f4,
+h4,
+h5,
+h6,
+dl,
+ol,
+ul,
+pre[cid],
+div[cid],
+#typora-source {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+}
+
+h4 {
+	font-size: 1.13rem;
+}
+/*
+ Pixyll
+ A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
+ Best served with BASSCSS (http://jxnblk.github.io/basscss)
+ Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander MIT License http://opensource.org/licenses/MIT
+
+*/
+
+body {
+	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+#write {
+	max-width: 914px;
+	color: #333;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+}
+body {
+	font-size: 1.5rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.md-table-edit {
+	background: #ededed;
+    padding-top: 4px;
+}
+
+table {
+	width: 100%;
+	font-size: 1.125rem;
+}
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+	padding: 12px;
+	line-height: 1.2;
+	vertical-align: top;
+	border-top: 1px solid #333;
+}
+table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #333;
+}
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+	border-top: 0;
+}
+table > tbody + tbody {
+	border-top: 2px solid #333;
+}
+p {
+	font-weight: 300;
+	line-height: 1.5;
+}
+abbr {
+	border-bottom: 1px black dotted;
+	cursor: help;
+}
+pre,
+code {
+	font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code,
+.md-fences  {
+	color: #7a7a7a;
+}
+
+.md-fences .CodeMirror.CodeMirror-wrap {
+	top: -1.5em;
+    margin-bottom: -1.5em;
+}
+
+.md-fences {
+	padding: 1.125em;
+	margin-bottom: 0.88em;
+	font-size: 1rem;
+	border: 1px solid #7a7a7a;
+}
+
+blockquote {
+	padding: 1.33em;
+	font-style: italic;
+	border-left: 5px solid #7a7a7a;
+	color: #555;
+}
+blockquote em {
+	color: #000;
+}
+blockquote footer {
+	font-size: .85rem;
+	font-style: normal;
+	background-color: #fff;
+	color: #7a7a7a;
+	border-color: transparent;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 900;
+	line-height: 1.2;
+	margin: 1em 0 0.5em;
+}
+@media screen and (min-width: 48em) {
+	.h1,
+	h1 {
+		font-size: 3.250rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.298rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.625rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.3rem;
+	}
+	#write>h4.md-focus:before,
+	#write>h5.md-focus:before,
+	#write>h6.md-focus:before{
+		top: 1px;
+	}
+	.p,
+	p,
+	li {
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	table {
+		font-size: 1.25rem;
+	}
+}
+@media (max-width: 48em) {
+	blockquote {
+		margin-left: 1rem;
+		margin-right: 0;
+		padding: 0.5em;
+	}
+	.h1,
+	h1 {
+		font-size: 2.827rem;
+	}
+	.h2,
+	h2 {
+		font-size: 1.999rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.413rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.3rem;
+	}
+}
+@media screen and (min-width: 64em) {
+	.h1,
+	h1 {
+		font-size: 4.498rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.29rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.9rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.591rem;
+	}
+	#write>h4.md-focus:before{
+		top:4px;
+	}
+}
+a {
+	color: #463F5C;
+	text-decoration: underline;
+}
+
+#write {
+	padding-top: 2rem;
+}
+
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+	white-space: pre;
+	border: 0px;
+
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+	width: 100vw;
+	max-width: calc(100% + 60px);
+
+	margin-left: -30px;
+	margin-bottom: 2em;
+	margin-top: -2010px;
+	padding-top: 2000px;
+	padding-bottom: 10px;
+	line-height: 1.5em;
+	color: #7a7a7a;
+	background-color: #fafafa;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	clear: both;
+	padding-left: 0;
+	font-size:1.125rem;
+}
+.md-image>.md-meta {
+	color: #463F5C
+}
+.footnotes {
+	font-size:1.1rem;
+}
+.md-tag {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.code-tooltip {
+	background: white;
+}
+.code-tooltip-content {
+	font-size: 1.1rem;
+}
+
+.task-list{
+	padding-left: 0;
+}
+
+.task-list-item {
+	padding-left:34px;
+}
+
+.task-list-item input{
+	width: 1.25rem;
+	height: 1.25rem;
+	display: block;
+	-webkit-appearance: initial;
+	top: -2px;
+}
+
+.task-list-item input:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.task-list-item input:before{
+	border: 1px solid #555;
+	border-radius: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #fff;
+	content: ' ';
+	transition: background-color 200ms ease-in-out;
+	display: block;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+	background: #333;
+	border-width: 2px;
+	display:inline-block;
+	transition: background-color 200ms ease-in-out;
+}
+
+.task-list-item input:checked:after,
+.task-list-item input[checked]:after {
+	opacity: 1;
+}
+
+.task-list-item input:after {
+	opacity: 1;
+	-webkit-transition: opacity 0.05s ease-in-out;
+	-moz-transition: opacity 0.05s ease-in-out;
+	transition: opacity 0.05s ease-in-out;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 0.4375rem;
+	left: 0.28125rem;
+	width: 0.9375rem;
+	height: 0.5rem;
+	border: 3px solid #fff;
+	border-top: 0;
+	border-right: 0;
+	content: ' ';
+	opacity: 0;
+}
+
+.md-tag {
+	color:inherit;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+#typora-sidebar {
+	font-size:1rem !important;
+}
+
+.html-for-mac #typora-sidebar {
+	background-color:white;
+}
+
+.outline-content li, .outline-content ul {
+	font-size:1rem !important;
+}
+
+.outline-title {
+	line-height: inherit;
+	margin-top: 10px;
+}
+
+.outline-expander {
+	width: 18px;
+}
+
+.outline-expander:before {
+ 	content: "+";
+	font-family: inherit;
+	color: rgb(108, 108, 108); 
+  	font-size: 1.5rem;
+ 	top: 0.1rem;
+}
+
+.outline-expander:hover:before {
+	content: "+";
+}
+
+.outline-item-open>.outline-item>.outline-expander:before{
+	content: "-";
+}
+
+/** source code mode */
+#typora-source {
+	font-family: Courier, monospace;
+    color: #6A6A6A;
+}
+
+.os-windows #typora-source {
+	font-family: inherit;
+}
+
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #428bca;
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #777777;
+}
+
+.preference-item-hint {
+	margin-top: 16px;
+}
+
+.md-diagram-panel {
+	margin-top: 24px;
+	margin-left: -1.2em;
+}
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name='header-n0' class='md-header-anchor '></a>report</h1><p>2018-05-12 19:48:13</p><h2><a name='header-n4' class='md-header-anchor '></a>Background</h2><p><strong>The air traffic flow management problem with enroute capacities</strong></p><ul><li>bertsimas</li><li>1998 </li><li><em>Operations research</em> (运筹学)</li><li>cited by 561</li></ul><p><strong>Cplex is used to solve four basic problems such as ：</strong></p><ul><li>linear programming (LP), </li><li>quadratic programming (QP), </li><li>quadratic programming with constraints (QCQP), </li><li>second-order cone programming (SOCP). </li></ul><p><strong>Cplex 3 advantages:</strong></p><ul><li>The solution speed is very <strong>fast</strong>; </li><li>sometimes it also provides <strong>superlinear</strong> <strong>acceleration</strong>.</li><li><strong>Functional</strong> <strong>advantages</strong>.</li></ul><p>As you know, I&#39;ve worked for 4 years, however, I am not familiar with Cplex and its c plus plus Reference Manual. So I took several days to understood it approximately.</p><h2><a name='header-n49' class='md-header-anchor '></a>paper review</h2><p>Definitely speaking, this paper including 6 parts.</p><ul><li>TFMP formulation</li><li>comlexity of TFMP</li><li>model variations</li><li>insights from stucture</li><li>Insights from computations</li><li>conclusion</li></ul><p>As the requirements asked. I will discuss the issues as below:</p><p>Firstly,</p><p></p><h4><a name='header-n77' class='md-header-anchor '></a>Motivation</h4><p>In my opinion, when we do research or reading a paper. we should know:</p><p>What&#39;s the problem? Why you do it? what about the others have done? Then how you do it? How could you evaluate it?(such as make a comparation with others or yourself experiments.)</p><h5><a name='header-n82' class='md-header-anchor '></a><strong>Problem in this paper.</strong></h5><p>Due to the demand for airport use has been increasing rapidly, however, airport capacity has been stagnating. Congestion on the air traffic system.</p><p></p><h4><a name='header-n87' class='md-header-anchor '></a>Contributions:</h4><ul><li><p>1、model that taking into account the (compara to others. or what about the others have done? )</p><ul><li>capacities of NAS</li><li>capacities of airports</li></ul></li><li><p>2、complexity of the problem is <u><strong>NP-Hard</strong></u> (point out its hard)</p></li><li><p>3、account for several variations of the basic problem</p><p>how to reroute flights<br/></p><p>how to handle banks in the hub</p></li><li><p>4、compared to all others proposed in the literature(1994 a) for this problem</p></li><li><p>5、solve large scale, realistic size problems (several thousand flights).</p></li></ul><h4><a name='header-n115' class='md-header-anchor '></a>problem definition</h4><p>schedule flights in real time in order to minimize congestion costs</p><h4><a name='header-n118' class='md-header-anchor '></a>model formulation</h4><ul><li><strong><u>objective:</u></strong>  when each flight held on the ground and in the air in order to minimize the total delay cost.</li></ul><ul><li><p><strong><u>input data:</u></strong></p><p>flights</p><p>airports</p><p>time periods</p><p>continued flights</p><p>path</p><p>capacity(air sector or depart airport and arrival airport)</p><p>scheduled time(depart and arrival)</p><p>cost(ground and in the air )</p><p>must time in one sector</p></li></ul><ul><li><p><strong><u>decision variables</u></strong>:</p><p>flight f arrives at sector j by time t.</p></li></ul><ul><li><p><strong><u>the objective function:</u></strong> （<u><strong>formula</strong></u>） (<u>minus</u>)</p><ul><li><p>actual departure time - scheduled departure time  <br/></p><p><u><strong>means</strong></u></p><p><u>held on the ground time</u>     (1)</p></li></ul></li></ul><ul><li><p>actual arrival time - scheduled arrival time -(actual departure time - scheduled departure time )</p><p><strong><u>equals</u></strong></p><p>(actual arrival time-actual departure time)-(scheduled arrival time-scheduled departure time)    <br/></p><p><strong><u>means</u></strong></p><p><u>held in the air time</u>      (2)</p><p>​</p></li></ul><p>  so the minimize total delay cost <u><strong>equals</strong></u></p><p>  (1) * cost on the ground +(2) *  cost in the air      (<u>mutiply</u> by)</p><h4><a name='header-n181' class='md-header-anchor '></a>solution algorithm</h4><p>complexity of the tfmp is NP-hard problem</p><p>the author using a job-shop schedule to confirm all the constraints of the TFMP will be satisfied if and only if there is a feasible job-shop schedule.</p><h4><a name='header-n186' class='md-header-anchor '></a>modeling variations(could be used in many directions)</h4><ul><li>Dependence Between Arrival and Departure Capacities Hub Connectivity with Multiple Connections</li><li>Banks of Flights</li><li>Rerouting of Aircraft</li></ul><h4><a name='header-n197' class='md-header-anchor '></a>implementation</h4><p> using cplex</p><h4><a name='header-n200' class='md-header-anchor '></a>case studies</h4><p>Air Traffic Flow Management Problem Test Cases</p><p>performed one set of experiments in the <u><strong>four airports</strong></u> for 200 flights over a 24-hour time period and another set for 1,000 flights over a 24-hour time period.</p><ul><li>Boston Logan (BOS), </li><li>NY LaGuardia (LGA), </li><li>Washington National (DCA),</li><li>a node representing all other airports(X)</li></ul><p>For the set of <u>200 flights,</u> to solve the problem CPLEX requires <u>234 seconds CPU time.</u> </p><p>For the <u>1000</u>, solve it at the infeasibility border over a <u>24 hour time</u> period.</p><h2><a name='header-n222' class='md-header-anchor '></a>paper replication</h2><h4><a name='header-n223' class='md-header-anchor '></a>algorithm design</h4><p>I think it is a linear programming (LP).</p><p>main.cpp+tfmp.cpp+createInfo.cpp+commonFunction.cpp+ .h</p><p>Firstly, structure input</p><pre class="md-fences md-end-block" lang="c++"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// create capacity Info.</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">Create_capacity</span>( <span class="cm-variable">D_k</span>, <span class="cm-variable">A_k</span>, <span class="cm-variable">S_sector</span>, <span class="cm-variable">H</span>, <span class="cm-variable">j</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-comment">//create time Info. still have some problems</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">Create_time</span>( <span class="cm-variable">D_f</span>, <span class="cm-variable">R_f</span>, <span class="cm-variable">S_f</span>, <span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">//create path</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">Create_path</span>( <span class="cm-variable">P</span>, <span class="cm-variable">P_f</span>, <span class="cm-variable">X</span>, <span class="cm-variable">flight</span>,<span class="cm-variable">j</span>,<span class="cm-variable">env</span>,<span class="cm-variable">H</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-comment">//create the cost_g,cost_a,P_f</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">Create_Cost</span>( <span class="cm-variable">cost_g</span>, <span class="cm-variable">cost_a</span>, <span class="cm-variable">P</span>.<span class="cm-variable">copy</span>(), <span class="cm-variable">P_f</span>.<span class="cm-variable">copy</span>(), <span class="cm-variable">flight</span>, <span class="cm-variable">t</span>, <span class="cm-variable">env</span>, <span class="cm-variable">X</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">//create each flight's every sector's least-time</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">Create_sector_time</span>( <span class="cm-variable">L_sector</span>, <span class="cm-variable">L_sector_f</span>, <span class="cm-variable">X</span>, <span class="cm-variable">flight</span>,<span class="cm-variable">j</span>,<span class="cm-variable">env</span>,<span class="cm-variable">H</span>,<span class="cm-variable">D_f</span>.<span class="cm-variable">copy</span>(),<span class="cm-variable">R_f</span>.<span class="cm-variable">copy</span>()); </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// create method</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">create_sector_FeasibleTime</span>(<span class="cm-variable">T_sector_first</span>, <span class="cm-variable">T_sector_last</span>, <span class="cm-variable">T_sector_first_f</span>, <span class="cm-variable">T_sector_last_f</span>, <span class="cm-variable">env</span>, <span class="cm-variable">L_sector_f</span>.<span class="cm-variable">copy</span>(), <span class="cm-variable">D</span>, <span class="cm-variable">D_f</span>.<span class="cm-variable">copy</span>(), <span class="cm-variable">R_f</span>.<span class="cm-variable">copy</span>(), <span class="cm-variable">X</span>, <span class="cm-variable">flight</span>);</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 294px;"></div><div class="CodeMirror-gutters" style="display: none; height: 324px;"></div></div></div></pre><p>Secondly,structure Objective function</p><p>Finally,structure Limit function (7 formula)</p><h4><a name='header-n235' class='md-header-anchor '></a>data structure</h4><pre class="md-fences md-end-block" lang="c++"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment">//departure capacity</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">D_k</span>(<span class="cm-variable">env</span>,<span class="cm-variable">H</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//arrival capacity</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">A_k</span>(<span class="cm-variable">env</span>,<span class="cm-variable">H</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//sector capacity</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">S_sector</span>(<span class="cm-variable">env</span>,<span class="cm-variable">j</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//scheduled departure time</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">D_f</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//scheduled arrival time</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">R_f</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//turn around time after flight f;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">S_f</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Path of a flight</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">P</span>(<span class="cm-variable">env</span>,<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">2</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//flights' path</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArrayArray</span> <span class="cm-def">P_f</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// flight f cost on the ground</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">cost_g</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// flight f cost in the air</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">cost_a</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Path's sector must spend time units</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">L_sector</span>(<span class="cm-variable">env</span>,<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">2</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//flights' path-sector must spend time units</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArrayArray</span> <span class="cm-def">L_sector_f</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// first time period in the set T_f_j</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">T_sector_first</span>(<span class="cm-variable">env</span>,<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">2</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// last time period in the set T_f_j</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArray</span> <span class="cm-def">T_sector_last</span>(<span class="cm-variable">env</span>,<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">2</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//flights' first time period in the set T_f_j</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArrayArray</span> <span class="cm-def">T_sector_first_f</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//flights' last time period in the set T_f_j</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloNumArrayArray</span> <span class="cm-def">T_sector_last_f</span>(<span class="cm-variable">env</span>,<span class="cm-variable">flight</span>);</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 778px;"></div><div class="CodeMirror-gutters" style="display: none; height: 808px;"></div></div></div></pre><p>object-oriented programming</p><p>input and output data(for example)</p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">flight number: 100</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">intervals number: 168</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sectors number: 20</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">flight's path number: 5</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">airports number: 20</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">upper bound of half an hour that a flight late to any given sector</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">number: 6</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">departure capacity</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[5, 7, 6, 6, 3, 5, 7, 6, 6, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">3, 3, 5, 5, 5, 6, 5, 7, 3, 5]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">arrival capacity</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[6, 7, 7, 5, 3, 6, 7, 6, 4, 3,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5, 4, 5, 5, 3, 6, 7, 7, 7, 4]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sector capacity</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[5, 5, 6, 4, 3, 3, 6, 4, 7, 5,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 6, 6, 7, 6, 3, 7, 4, 3, 6]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">departure time</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[83, 155, 118, 81, 114, 86, 106, 1, 157, 158,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">155, 14, 20, 14, 106, 23, 120, 97, 42, 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">28, 95, 22, 134, 30, 60, 82, 165, 4, 67,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">61, 156, 138, 59, 97, 63, 77, 34, 159, 25,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">118, 106, 96, 165, 42, 15, 26, 46, 55, 49,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">66, 24, 18, 40, 4, 147, 143, 32, 129, 141,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">133, 110, 139, 161, 164, 145, 42, 107, 71, 139, 167, 158, 11, 149, 128, 118, 16, 65, 112, 150,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">63, 136, 51, 34, 137, 135, 33, 152, 48, 167,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">93, 155, 88, 88, 151, 96, 2, 105, 74, 103]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">arrival time</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[110, 181, 147, 107, 144, 132, 142, 45, 203, 204,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">181, 56, 63, 56, 134, 69, 158, 136, 73, 33,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">53, 120, 54, 161, 77, 93, 122, 202, 35, 95,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">93, 188, 169, 86, 130, 101, 111, 69, 198, 49,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">154, 137, 122, 209, 78, 54, 57, 87, 84, 86,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">99, 67, 59, 66, 42, 174, 167, 57, 154, 174,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">164, 154, 174, 185, 203, 176, 76, 134, 107, 176,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">207, 190, 49, 189, 163, 163, 47, 104, 137, 191,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">95, 167, 90, 76, 164, 181, 77, 180, 81, 194,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">129, 193, 112, 117, 178, 129, 29, 140, 101, 149]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">each flight's turn around time</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[7, 7, 7, 6, 7, 7, 6, 6, 7, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 7, 6, 6, 6, 7, 6, 6, 6, 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">6, 6, 6, 7, 6, 7, 6, 7, 6, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 7, 7, 7, 7, 7, 7, 6, 7, 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 6, 6, 6, 6, 6, 6, 7, 6, 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 7, 7, 6, 6, 6, 7, 7, 6, 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 7, 7, 7, 6, 6, 7, 7, 7, 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 7, 7, 6, 6, 6, 6, 6, 7, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">6, 6, 7, 6, 7, 6, 6, 6, 7, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 6, 7, 6, 6, 6, 7, 7, 7, 7]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Path of a flight</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[[8, 8, 15, 13, 16, 8, 10], [6, 4, 14, 9, 19, 20, 7], [11, 5, 13, 14,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 18, 1], [0, 12, 1, 4, 14, 19, 17], [13, 15, 1, 20, 10, 3, 12], [0,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">20, 4, 11, 1, 12, 10], [2, 7, 20, 11, 17, 5, 19], [6, 12, 5, 1, 19,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 2], [20, 1, 19, 15, 10, 14, 6], [17, 4, 9, 18, 11, 5, 16],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[10, 18, 12, 11, 7, 14, 6], [20, 3, 4, 13, 8, 2, 11], [20, 20, 8, 12,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">15, 6, 2], [15, 9, 3, 16, 6, 14, 1], [7, 20, 15, 6, 10, 14, 17], [10,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">1, 19, 13, 17, 8, 20], [20, 2, 12, 17, 9, 6, 1], [19, 19, 14, 8, 11,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">12, 4], [7, 14, 8, 8, 16, 12, 3], [11, 7, 16, 5, 2, 18, 4],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[6, 5, 9, 17, 2, 16, 11], [1, 6, 14, 2, 12, 10, 8], [3, 9, 6, 5, 8,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">10, 17], [7, 17, 8, 1, 5, 12, 11], [11, 12, 5, 19, 19, 15, 6], [5,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">10, 19, 15, 6, 9, 8], [3, 15, 1, 17, 16, 4, 9], [12, 12, 13, 5, 17,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">18, 16], [19, 11, 16, 13, 8, 18, 20], [15, 16, 14, 20, 10, 5, 2],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[11, 6, 10, 19, 14, 1, 18], [11, 19, 4, 17, 2, 20, 8], [10, 20, 8,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">16, 16, 13, 5], [6, 5, 15, 8, 20, 16, 17], [6, 6, 20, 12, 4, 19, 5],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[6, 20, 12, 8, 5, 2, 15], [9, 11, 4, 13, 13, 2, 15], [2, 18, 1, 10,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">6, 8, 3], [13, 18, 17, 9, 3, 10, 20], [17, 4, 18, 2, 13, 7, 16],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[18, 11, 15, 16, 2, 13, 14], [14, 13, 5, 12, 19, 17, 11], [2, 20, 15,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 16, 4, 13], [4, 20, 11, 11, 10, 6, 12], [4, 13, 17, 20, 12, 11,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">18], [3, 9, 18, 11, 4, 17, 10], [6, 15, 12, 5, 7, 11, 3], [1, 11, 5,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">14, 2, 8, 20], [14, 18, 11, 2, 2, 6, 3], [10, 13, 15, 20, 8, 18, 3],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[14, 11, 20, 18, 2, 17, 1], [20, 13, 17, 11, 9, 15, 5], [3, 11, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">16, 12, 6, 18], [5, 9, 6, 14, 18, 10, 17], [12, 2, 16, 19, 1, 10, 3],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[19, 4, 4, 10, 11, 16, 5], [2, 4, 19, 13, 13, 17, 15], [17, 1, 11, 9,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; 2, 8, 15], [13, 12, 9, 16, 14, 10, 20], [12, 1, 5, 20, 11, 11, 14],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[1, 3, 19, 5, 9, 14, 16], [18, 1, 17, 8, 11, 4, 14], [0, 2, 5, 1, 1,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">19, 18], [6, 19, 15, 3, 10, 11, 16], [15, 16, 6, 2, 12, 7, 20], [10,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">15, 18, 20, 19, 1, 6], [2, 5, 3, 16, 1, 8, 7], [7, 3, 4, 10, 11, 19,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">14], [3, 11, 1, 19, 15, 8, 17], [2, 7, 12, 5, 20, 17, 13],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[16, 9, 15, 15, 20, 12, 11], [5, 8, 4, 15, 9, 2, 13], [12, 4, 20, 20,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">20, 17, 2], [19, 14, 20, 9, 5, 1, 7], [7, 15, 17, 10, 8, 20, 5], [12,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">10, 7, 8, 11, 14, 2], [2, 17, 15, 16, 12, 13, 9], [7, 11, 8, 18, 10,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">12, 13], [5, 13, 2, 12, 11, 14, 9], [3, 1, 20, 15, 13, 11, 18],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[11, 20, 13, 13, 4, 2, 14], [17, 2, 19, 12, 1, 1, 5], [8, 10, 5, 16,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">11, 17, 20], [16, 19, 9, 13, 1, 3, 10], [9, 4, 16, 20, 19, 2, 3],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[12, 15, 1, 2, 11, 9, 5], [2, 16, 10, 11, 13, 4, 6], [0, 11, 12, 4,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">7, 10, 15], [18, 13, 5, 5, 2, 20, 1], [11, 2, 6, 15, 10, 3, 1],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[14, 14, 9, 3, 2, 7, 4], [14, 20, 18, 5, 19, 17, 12], [4, 16, 17, 10,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">9, 1, 3], [13, 17, 8, 7, 12, 12, 4], [12, 6, 8, 14, 7, 13, 1], [18,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">18, 14, 16, 20, 12, 19], [4, 1, 19, 10, 16, 13, 14], [13, 17, 17, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">14, 5, 20], [10, 9, 20, 3, 6, 17, 8], [7, 9, 1, 11, 19, 13, 6]]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">each flight cost on the ground</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[1, 5, 2, 4, 2, 5, 5, 3, 2, 4,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">2, 4, 4, 1, 4, 2, 2, 4, 3, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">2, 4, 4, 4, 1, 2, 4, 4, 5, 5,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 3, 3, 4, 4, 4, 1, 2, 1, 5,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">3, 3, 5, 2, 1, 4, 4, 1, 5, 1,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 1, 1, 5, 1, 3, 3, 4, 3, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5, 4, 1, 5, 1, 2, 5, 5, 4, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 5, 3, 5, 1, 3, 1, 1, 3, 1,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5, 3, 2, 1, 2, 2, 1, 1, 3, 4,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">1, 1, 1, 1, 3, 5, 4, 1, 2, 1]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">each flight cost in the air</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[4, 1, 4, 3, 4, 4, 3, 2, 5, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">2, 4, 5, 2, 3, 5, 2, 2, 2, 5,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5, 5, 1, 3, 2, 3, 3, 1, 3, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">2, 5, 4, 3, 5, 5, 4, 1, 3, 5,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5, 5, 5, 5, 2, 3, 5, 5, 3, 4,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">1, 5, 1, 4, 2, 2, 1, 4, 5, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 2, 4, 2, 4, 1, 4, 3, 2, 3,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">5, 2, 5, 2, 3, 1, 1, 5, 3, 2,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">3, 2, 4, 5, 2, 5, 1, 5, 4, 4,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">4, 3, 4, 4, 4, 5, 2, 4, 2, 5]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">each flight must spend time units</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[[0, 6, 5, 5, 5, 6, 0], [0, 5, 5, 6, 6, 4, 0], [0, 6, 6, 6, 6, 5, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 5, 6, 6, 4, 0], [0, 6, 7, 6, 6, 5, 0], [0, 9, 9, 10, 10, 8,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">0], [0, 8, 8, 8, 7, 5, 0], [0, 8, 8, 9, 9, 10, 0], [0, 10, 10, 9, 9,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">8, 0], [0, 9, 9, 9, 10, 9, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 5, 6, 5, 5, 0], [0, 9, 8, 8, 8, 9, 0], [0, 9, 9, 9, 8, 8, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 8, 8, 9, 8, 9, 0], [0, 6, 5, 6, 5, 6, 0], [0, 9, 9, 10, 9, 9, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 7, 7, 8, 8, 8, 0], [0, 7, 7, 8, 8, 9, 0], [0, 7, 6, 6, 6, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 6, 5, 5, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 6, 5, 6, 6, 2, 0], [0, 6, 5, 6, 6, 2, 0], [0, 7, 7, 7, 7, 4, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; [0, 5, 5, 6, 6, 5, 0], [0, 10, 10, 10, 10, 7, 0], [0, 7, 7, 6, 6, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">0], [0, 9, 9, 8, 9, 5, 0], [0, 7, 8, 8, 7, 7, 0], [0, 6, 6, 7, 6, 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">0], [0, 5, 6, 6, 5, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 7, 6, 7, 7, 5, 0], [0, 6, 7, 6, 6, 7, 0], [0, 6, 7, 7, 7, 4, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 6, 6, 5, 5, 5, 0], [0, 6, 7, 7, 7, 6, 0], [0, 7, 7, 8, 8, 8, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 7, 6, 7, 6, 8, 0], [0, 7, 7, 7, 7, 7, 0], [0, 7, 8, 7, 7, 10, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 5, 4, 4, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 8, 8, 7, 7, 6, 0], [0, 7, 6, 7, 7, 4, 0], [0, 6, 6, 6, 5, 3, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 9, 9, 8, 8, 10, 0], [0, 8, 7, 8, 7, 6, 0], [0, 8, 7, 8, 7, 9, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 7, 7, 7, 6, 4, 0], [0, 8, 9, 8, 8, 8, 0], [0, 5, 6, 6, 5, 7, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 7, 7, 8, 8, 7, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 7, 6, 6, 7, 7, 0], [0, 9, 8, 8, 9, 9, 0], [0, 9, 9, 9, 9, 5, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 6, 6, 6, 3, 0], [0, 7, 7, 7, 8, 9, 0], [0, 5, 5, 6, 6, 5, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 5, 4, 4, 6, 0], [0, 5, 6, 5, 6, 3, 0], [0, 5, 6, 6, 6, 2, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 6, 7, 7, 7, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 6, 6, 6, 6, 7, 0], [0, 9, 9, 9, 9, 8, 0], [0, 8, 7, 7, 8, 5, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 4, 4, 5, 4, 7, 0], [0, 8, 8, 8, 7, 8, 0], [0, 7, 7, 6, 7, 4, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 6, 7, 7, 6, 8, 0], [0, 5, 6, 5, 5, 6, 0], [0, 8, 8, 7, 7, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 8, 8, 8, 7, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 9, 8, 9, 8, 6, 0], [0, 6, 6, 6, 6, 8, 0], [0, 8, 7, 7, 8, 8, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 8, 9, 9, 9, 5, 0], [0, 7, 8, 7, 7, 6, 0], [0, 9, 10, 9, 9, 8, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 7, 6, 7, 6, 5, 0], [0, 8, 7, 8, 8, 8, 0], [0, 5, 5, 6, 6, 3, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 9, 9, 8, 9, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 6, 6, 6, 7, 7, 0], [0, 7, 6, 7, 6, 5, 0], [0, 8, 7, 7, 8, 9, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 9, 9, 8, 8, 8, 0], [0, 5, 5, 5, 6, 6, 0], [0, 10, 10, 9, 10, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">0], [0, 8, 8, 8, 9, 11, 0], [0, 6, 6, 6, 5, 5, 0], [0, 6, 6, 7, 7, 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">0], [0, 6, 5, 5, 5, 6, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 8, 8, 7, 8, 5, 0], [0, 8, 8, 7, 7, 8, 0], [0, 5, 4, 5, 5, 5, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 5, 5, 5, 9, 0], [0, 6, 5, 5, 5, 6, 0], [0, 7, 6, 6, 7, 7, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 5, 5, 5, 5, 7, 0], [0, 8, 7, 7, 7, 6, 0], [0, 6, 5, 5, 6, 5, 0],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[0, 9, 9, 9, 9, 10, 0]]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">each flight first time period in one sector</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[[83, 83, 89, 94, 99, 104, 110], [155, 155, 160, 165, 171, 177, 181],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[118, 118, 124, 130, 136, 142, 147], [81, 81, 86, 91, 97, 103, 107],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[114, 114, 120, 127, 133, 139, 144], [86, 86, 95, 104, 114, 124,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">132], [106, 106, 114, 122, 130, 137, 142], [1, 1, 9, 17, 26, 35, 45],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[157, 157, 167, 177, 186, 195, 203], [158, 158, 167, 176, 185, 195,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">204],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[155, 155, 160, 165, 171, 176, 181], [14, 14, 23, 31, 39, 47, 56],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[20, 20, 29, 38, 47, 55, 63], [14, 14, 22, 30, 39, 47, 56], [106,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">106, 112, 117, 123, 128, 134], [23, 23, 32, 41, 51, 60, 69], [120,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">120, 127, 134, 142, 150, 158], [97, 97, 104, 111, 119, 127, 136],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[42, 42, 49, 55, 61, 67, 73], [6, 6, 11, 17, 22, 27, 33],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[28, 28, 34, 39, 45, 51, 53], [95, 95, 101, 106, 112, 118, 120], [22,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">22, 29, 36, 43, 50, 54], [134, 134, 139, 144, 150, 156, 161], [30,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">30, 40, 50, 60, 70, 77], [60, 60, 67, 74, 80, 86, 93], [82, 82, 91,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">100, 108, 117, 122], [165, 165, 172, 180, 188, 195, 202], [4, 4, 10,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">16, 23, 29, 35], [67, 67, 72, 78, 84, 89, 95],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[61, 61, 68, 74, 81, 88, 93], [156, 156, 162, 169, 175, 181, 188],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; [138, 138, 144, 151, 158, 165, 169], [59, 59, 65, 71, 76, 81, 86],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[97, 97, 103, 110, 117, 124, 130], [63, 63, 70, 77, 85, 93, 101],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[77, 77, 84, 90, 97, 103, 111], [34, 34, 41, 48, 55, 62, 69], [159,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">159, 166, 174, 181, 188, 198], [25, 25, 30, 35, 39, 43, 49],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[118, 118, 126, 134, 141, 148, 154], [106, 106, 113, 119, 126, 133,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">137], [96, 96, 102, 108, 114, 119, 122], [165, 165, 174, 183, 191,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">199, 209], [42, 42, 50, 57, 65, 72, 78], [15, 15, 23, 30, 38, 45,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">54], [26, 26, 33, 40, 47, 53, 57], [46, 46, 54, 63, 71, 79, 87], [55,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">55, 60, 66, 72, 77, 84], [49, 49, 56, 63, 71, 79, 86],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[66, 66, 73, 79, 85, 92, 99], [24, 24, 33, 41, 49, 58, 67], [18, 18,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">27, 36, 45, 54, 59], [40, 40, 45, 51, 57, 63, 66], [4, 4, 11, 18, 25,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">33, 42], [147, 147, 152, 157, 163, 169, 174], [143, 143, 148, 153,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">157, 161, 167], [32, 32, 37, 43, 48, 54, 57], [129, 129, 134, 140,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">146, 152, 154], [141, 141, 147, 154, 161, 168, 174],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[133, 133, 139, 145, 151, 157, 164], [110, 110, 119, 128, 137, 146,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">154], [139, 139, 147, 154, 161, 169, 174], [161, 161, 165, 169, 174,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">178, 185], [164, 164, 172, 180, 188, 195, 203], [145, 145, 152, 159,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">165, 172, 176], [42, 42, 48, 55, 62, 68, 76], [107, 107, 112, 118,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">123, 128, 134], [71, 71, 79, 87, 94, 101, 107], [139, 139, 147, 155,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">163, 170, 176],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[167, 167, 176, 184, 193, 201, 207], [158, 158, 164, 170, 176, 182,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">190], [11, 11, 19, 26, 33, 41, 49], [149, 149, 157, 166, 175, 184,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">189], [128, 128, 135, 143, 150, 157, 163], [118, 118, 127, 137, 146,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">155, 163], [16, 16, 23, 29, 36, 42, 47], [65, 65, 73, 80, 88, 96,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">104], [112, 112, 117, 122, 128, 134, 137], [150, 150, 159, 168, 176,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">185, 191],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[63, 63, 69, 75, 81, 88, 95], [136, 136, 143, 149, 156, 162, 167],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[51, 51, 59, 66, 73, 81, 90], [34, 34, 43, 52, 60, 68, 76], [137,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">137, 142, 147, 152, 158, 164], [135, 135, 145, 155, 164, 174, 181],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[33, 33, 41, 49, 57, 66, 77], [152, 152, 158, 164, 170, 175, 180],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[48, 48, 54, 60, 67, 74, 81], [167, 167, 173, 178, 183, 188, 194],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[93, 93, 101, 109, 116, 124, 129], [155, 155, 163, 171, 178, 185,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">193], [88, 88, 93, 97, 102, 107, 112], [88, 88, 93, 98, 103, 108,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">117], [151, 151, 157, 162, 167, 172, 178], [96, 96, 103, 109, 115,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">122, 129], [2, 2, 7, 12, 17, 22, 29], [105, 105, 113, 120, 127, 134,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">140], [74, 74, 80, 85, 90, 96, 101], [103, 103, 112, 121, 130, 139,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">149]]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">each flight last time period in one sector</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[[89, 101, 112, 123, 134, 146, 152], [161, 172, 183, 195, 207, 217,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">223], [124, 136, 148, 160, 172, 183, 189], [87, 98, 109, 121, 133,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">143, 149], [120, 132, 145, 157, 169, 180, 186], [92, 107, 122, 138,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">154, 168, 174], [112, 126, 140, 154, 167, 178, 184], [7, 21, 35, 50,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">65, 81, 87], [163, 179, 195, 210, 225, 239, 245], [164, 179, 194,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">209, 225, 240, 246],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[161, 172, 183, 195, 206, 217, 223], [20, 35, 49, 63, 77, 92, 98],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[26, 41, 56, 71, 85, 99, 105], [20, 34, 48, 63, 77, 92, 98], [112,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">124, 135, 147, 158, 170, 176], [29, 44, 59, 75, 90, 105, 111], [126,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">139, 152, 166, 180, 194, 200], [103, 116, 129, 143, 157, 172, 178],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[48, 61, 73, 85, 97, 109, 115], [12, 23, 35, 46, 57, 69, 75],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  [34, 46, 57, 69, 81, 89, 95], [101, 113, 124, 136, 148, 156, 162],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[28, 41, 54, 67, 80, 90, 96], [140, 151, 162, 174, 186, 197, 203],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[36, 52, 68, 84, 100, 113, 119], [66, 79, 92, 104, 116, 129, 135],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[88, 103, 118, 132, 147, 158, 164], [171, 184, 198, 212, 225, 238,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">244], [10, 22, 34, 47, 59, 71, 77], [73, 84, 96, 108, 119, 131, 137],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[67, 80, 92, 105, 118, 129, 135], [162, 174, 187, 199, 211, 224,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">230], [144, 156, 169, 182, 195, 205, 211], [65, 77, 89, 100, 111,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">122, 128], [103, 115, 128, 141, 154, 166, 172], [69, 82, 95, 109,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">123, 137, 143], [83, 96, 108, 121, 133, 147, 153], [40, 53, 66, 79,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">92, 105, 111], [165, 178, 192, 205, 218, 234, 240], [31, 42, 53, 63,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">73, 85, 91],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[124, 138, 152, 165, 178, 190, 196], [112, 125, 137, 150, 163, 173,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">179], [102, 114, 126, 138, 149, 158, 164], [171, 186, 201, 215, 229,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">245, 251], [48, 62, 75, 89, 102, 114, 120], [21, 35, 48, 62, 75, 90,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">96], [32, 45, 58, 71, 83, 93, 99], [52, 66, 81, 95, 109, 123, 129],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[61, 72, 84, 96, 107, 120, 126], [55, 68, 81, 95, 109, 122, 128],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[72, 85, 97, 109, 122, 135, 141], [30, 45, 59, 73, 88, 103, 109],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[24, 39, 54, 69, 84, 95, 101], [46, 57, 69, 81, 93, 102, 108], [10,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">23, 36, 49, 63, 78, 84], [153, 164, 175, 187, 199, 210, 216], [149,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">160, 171, 181, 191, 203, 209], [38, 49, 61, 72, 84, 93, 99], [135,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">146, 158, 170, 182, 190, 196], [147, 159, 172, 185, 198, 210, 216],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[139, 151, 163, 175, 187, 200, 206], [116, 131, 146, 161, 176, 190,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">196], [145, 159, 172, 185, 199, 210, 216], [167, 177, 187, 198, 208,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">221, 227], [170, 184, 198, 212, 225, 239, 245], [151, 164, 177, 189,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">202, 212, 218], [48, 60, 73, 86, 98, 112, 118], [113, 124, 136, 147,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">158, 170, 176], [77, 91, 105, 118, 131, 143, 149], [145, 159, 173,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">187, 200, 212, 218],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[173, 188, 202, 217, 231, 243, 249], [164, 176, 188, 200, 212, 226,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">232], [17, 31, 44, 57, 71, 85, 91], [155, 169, 184, 199, 214, 225,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">231], [134, 147, 161, 174, 187, 199, 205], [124, 139, 155, 170, 185,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">199, 205], [22, 35, 47, 60, 72, 83, 89], [71, 85, 98, 112, 126, 140,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">146], [118, 129, 140, 152, 164, 173, 179], [156, 171, 186, 200, 215,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">227, 233],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[69, 81, 93, 105, 118, 131, 137], [142, 155, 167, 180, 192, 203,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">209], [57, 71, 84, 97, 111, 126, 132], [40, 55, 70, 84, 98, 112,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">118], [143, 154, 165, 176, 188, 200, 206], [141, 157, 173, 188, 204,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">217, 223], [39, 53, 67, 81, 96, 113, 119], [158, 170, 182, 194, 205,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">216, 222], [54, 66, 78, 91, 104, 117, 123], [173, 185, 196, 207, 218,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">230, 236],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">[99, 113, 127, 140, 154, 165, 171], [161, 175, 189, 202, 215, 229,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">235], [94, 105, 115, 126, 137, 148, 154], [94, 105, 116, 127, 138,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">153, 159], [157, 169, 180, 191, 202, 214, 220], [102, 115, 127, 139,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">152, 165, 171], [8, 19, 30, 41, 52, 65, 71], [111, 125, 138, 151,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">164, 176, 182], [80, 92, 103, 114, 126, 137, 143], [109, 124, 139,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">154, 169, 185, 191]]</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 5565px;"></div><div class="CodeMirror-gutters" style="display: none; height: 5595px;"></div></div></div></pre><h4><a name='header-n242' class='md-header-anchor '></a>implementation procedures</h4><p>Using the Cplex and C++</p><p>the problems faced when I was coding </p><ul><li><p>not familar with the Cplex and its c plus plus Reference Manual</p></li><li><p>Promotional version problem.</p><p>​</p></li></ul><h4><a name='header-n256' class='md-header-anchor '></a>convergence and computational efficiency analysis</h4><p>NP hard (may not found solutions) taking the input info. into account.</p><p></p><h4><a name='header-n261' class='md-header-anchor '></a>scenario design</h4><p>objective design</p><pre class="md-fences md-end-block" lang="c++"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-comment">// TFMP final target</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloExpr</span> <span class="cm-def">FinalRes</span>(<span class="cm-variable">env</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloExpr</span> <span class="cm-def">FinalRes_temp1</span>(<span class="cm-variable">env</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">IloExpr</span> <span class="cm-def">FinalRes_temp2</span>(<span class="cm-variable">env</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">for</span> (<span class="cm-variable-3">int</span> <span class="cm-variable">n</span><span class="cm-operator">=</span><span class="cm-number">0</span>; <span class="cm-variable">n</span><span class="cm-operator">&lt;</span><span class="cm-variable">flight</span>; <span class="cm-variable">n</span><span class="cm-operator">++</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable-3">int</span> <span class="cm-variable">Cfg</span><span class="cm-operator">=</span><span class="cm-variable">cost_g</span>[<span class="cm-variable">n</span>];</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable-3">int</span> <span class="cm-variable">Cfa</span><span class="cm-operator">=</span><span class="cm-variable">cost_a</span>[<span class="cm-variable">n</span>];</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable-3">int</span> <span class="cm-variable">Df</span><span class="cm-operator">=</span><span class="cm-variable">D_f</span>[<span class="cm-variable">n</span>];</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable-3">int</span> <span class="cm-variable">Rf</span><span class="cm-operator">=</span><span class="cm-variable">R_f</span>[<span class="cm-variable">n</span>];</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">for</span> (<span class="cm-variable-3">int</span> <span class="cm-variable">m</span><span class="cm-operator">=</span><span class="cm-number">1</span>; <span class="cm-variable">m</span><span class="cm-operator">&lt;</span><span class="cm-variable">t</span>; <span class="cm-variable">m</span><span class="cm-operator">++</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">m</span><span class="cm-operator">&gt;=</span><span class="cm-variable">T_sector_first_f</span>[<span class="cm-variable">n</span>][<span class="cm-number">0</span>]<span class="cm-operator">&amp;&amp;</span><span class="cm-variable">m</span><span class="cm-operator">&lt;=</span><span class="cm-variable">T_sector_last_f</span>[<span class="cm-variable">n</span>][<span class="cm-number">0</span>]){</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">FinalRes_temp1</span><span class="cm-operator">+=</span><span class="cm-variable">m</span><span class="cm-operator">*</span>(<span class="cm-variable">Wfst</span>[<span class="cm-variable">n</span>][<span class="cm-number">0</span>][<span class="cm-variable">m</span>]<span class="cm-operator">-</span><span class="cm-variable">Wfst</span>[<span class="cm-variable">n</span>][<span class="cm-number">0</span>][<span class="cm-variable">m</span><span class="cm-operator">-</span><span class="cm-number">1</span>]);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">m</span><span class="cm-operator">&gt;=</span><span class="cm-variable">T_sector_first_f</span>[<span class="cm-variable">n</span>][<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">1</span>]<span class="cm-operator">&amp;&amp;</span><span class="cm-variable">m</span><span class="cm-operator">&lt;=</span><span class="cm-variable">T_sector_last_f</span>[<span class="cm-variable">n</span>][<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">1</span>]){</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">FinalRes_temp2</span><span class="cm-operator">+=</span><span class="cm-variable">m</span><span class="cm-operator">*</span>(<span class="cm-variable">Wfst</span>[<span class="cm-variable">n</span>][<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">1</span>][<span class="cm-variable">m</span>]<span class="cm-operator">-</span><span class="cm-variable">Wfst</span>[<span class="cm-variable">n</span>][<span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">1</span>][<span class="cm-variable">m</span><span class="cm-operator">-</span><span class="cm-number">1</span>]);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">FinalRes</span><span class="cm-operator">+=</span> (<span class="cm-variable">Cfg</span><span class="cm-operator">-</span><span class="cm-variable">Cfa</span>)<span class="cm-operator">*</span><span class="cm-variable">FinalRes_temp1</span><span class="cm-operator">+</span><span class="cm-variable">Cfa</span><span class="cm-operator">*</span><span class="cm-variable">FinalRes_temp2</span><span class="cm-operator">+</span>(<span class="cm-variable">Cfa</span><span class="cm-operator">-</span><span class="cm-variable">Cfg</span>)<span class="cm-operator">*</span><span class="cm-variable">Df</span><span class="cm-operator">+</span><span class="cm-variable">Cfa</span><span class="cm-operator">*</span><span class="cm-variable">Rf</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  }</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 441px;"></div><div class="CodeMirror-gutters" style="display: none; height: 471px;"></div></div></div></pre><p>subjective design(for example)</p><pre class="md-fences md-end-block" lang="c++"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">//subject to 5</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">for</span> (<span class="cm-variable-3">int</span> <span class="cm-variable">m</span><span class="cm-operator">=</span><span class="cm-number">0</span>; <span class="cm-variable">m</span><span class="cm-operator">&lt;</span><span class="cm-variable">flight</span>; <span class="cm-variable">m</span><span class="cm-operator">++</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">for</span> (<span class="cm-variable-3">int</span> <span class="cm-variable">n</span><span class="cm-operator">=</span><span class="cm-number">0</span>; <span class="cm-variable">n</span><span class="cm-operator">&lt;</span><span class="cm-variable">X</span><span class="cm-operator">+</span><span class="cm-number">1</span>; <span class="cm-variable">n</span><span class="cm-operator">++</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">for</span> (<span class="cm-variable-3">int</span> <span class="cm-variable">p</span><span class="cm-operator">=</span><span class="cm-number">0</span>; <span class="cm-variable">p</span><span class="cm-operator">&lt;</span><span class="cm-variable">t</span>; <span class="cm-variable">p</span><span class="cm-operator">++</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//if n~T_f_j(T_sector_first_f T_sector_last_f)</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">p</span><span class="cm-operator">&lt;=</span><span class="cm-variable">T_sector_last_f</span>[<span class="cm-variable">m</span>][<span class="cm-variable">n</span>]<span class="cm-operator">&amp;&amp;</span><span class="cm-variable">p</span><span class="cm-operator">&gt;=</span><span class="cm-variable">T_sector_first_f</span>[<span class="cm-variable">m</span>][<span class="cm-variable">n</span>]){</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable-3">int</span> <span class="cm-variable">lfj</span><span class="cm-operator">=</span><span class="cm-variable">L_sector_f</span>[<span class="cm-variable">m</span>][<span class="cm-variable">n</span>];</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">p</span><span class="cm-operator">+</span><span class="cm-variable">lfj</span><span class="cm-operator">&lt;</span><span class="cm-variable">t</span>){</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">model</span>.<span class="cm-variable">add</span>(<span class="cm-variable">Wfst</span>[<span class="cm-variable">m</span>][<span class="cm-variable">n</span><span class="cm-operator">+</span><span class="cm-number">1</span>][<span class="cm-variable">p</span><span class="cm-operator">+</span><span class="cm-variable">lfj</span>]<span class="cm-operator">&lt;=</span><span class="cm-variable">Wfst</span>[<span class="cm-variable">m</span>][<span class="cm-variable">n</span>][<span class="cm-variable">p</span>]);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  }</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 315px;"></div><div class="CodeMirror-gutters" style="display: none; height: 345px;"></div></div></div></pre><p>input structure design</p><p>output analysis</p><p></p><h4><a name='header-n274' class='md-header-anchor '></a>case studies</h4><p>For the set of <u>200 flights,</u> to solve the problem CPLEX requires <u>234 seconds CPU time.</u> </p><p>For the <u>1000</u>, solve it at the infeasibility border over a <u>24 hour time</u> period.</p><p></p><h4><a name='header-n281' class='md-header-anchor '></a>Compare your results to the paper.</h4><ul><li>Paper</li></ul><p><img src='/Users/xiongjunjie/Desktop/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-05-12%2021.32.57.png' alt='屏幕快照 2018-05-12 21.32.57' /></p><ul><li>mine </li></ul><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">1000-0.1-(5-8)-time()-0</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Found incumbent of value 197745.000000 after 0.01 sec. (2.20 ticks)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Tried aggregator 99 times.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">MIP Presolve eliminated 380071 rows and 202 columns.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Aggregator did 530 substitutions.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">All rows and columns eliminated.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Presolve time = 8.32 sec. (3364.02 ticks)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">1000-0.1-(10-13)-time()-0</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">MIP Presolve eliminated 942173 rows and 834 columns.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">MIP Presolve modified 97 coefficients.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Aggregator did 241 substitutions.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Reduced MIP has 144 rows, 101 columns, and 369 nonzeros.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Reduced MIP has 99 binaries, 2 generals, 0 SOSs, and 0 indicators.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Presolve time = 4.85 sec. (4314.61 ticks)</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 378px;"></div><div class="CodeMirror-gutters" style="display: none; height: 408px;"></div></div></div></pre><p></p><p></p></div>
+</body>
+</html>
