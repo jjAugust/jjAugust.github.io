@@ -1,18 +1,4 @@
-
-
-------
-
-category: work
-published: true
-layout: post
-title: CNN+双向LSTM+attention
-description: CNN+双向LSTM+attention
-
-------
-
-# 
-
-##CNN+双向LSTM+attention
+#CNN+双向LSTM+attention
 
 #### CNN
 
