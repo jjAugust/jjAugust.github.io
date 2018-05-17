@@ -1,16 +1,10 @@
-
-
 ---
-
 category: work
 published: true
 layout: post
 title: report
 description: report
-
-------
-
-# 
+---
 
 # report
 
