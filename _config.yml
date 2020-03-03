@@ -22,3 +22,5 @@ myblog:
   postbgimg: []
 
 categories: [resume,jjAugust]
+
+theme: jekyll-theme-tactile
