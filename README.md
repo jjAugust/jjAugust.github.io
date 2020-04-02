@@ -14,7 +14,7 @@ $ git add <LIST_OF_UPDATED_FILES>
 $ git commit -m "<COMMENT>"
 $ git push origin project2
 ```
-2. Create a tag named `v1`.
+2. Create a tag named `v2`.
 ```
 $ git tag -a v2 -m "Submission for project 2."
 ```
