@@ -30,19 +30,23 @@ void
 boot1main (mbr_t * mbr, bios_smap_t *smap)
 {
     /* Roll sets the row we will print on for the VGA, this function is defined in the provided, boot1lib files. */
-    roll(2);
+    roll(10);
     /* Since we can't use the standard C library yet, we have to directly print to the VGA to get printed output.*/
     putline("Start boot1 main ...");
-
     /*
      *  YOUR CODE HERE
      *  Functions parse_e820(), load_kernel(), and exec_kernel() are provided.
      *  Utilize them to implement the functionality of boot1main described above.
      */
-    parse_e820(smap);
+    for(int m = 0; m < 4; m++){//4 entries
+        if(mbr->partition[m].bootable != BOOTABLE_PARTITION) {
 
-
-
+        }else{
+            parse_e820(smap);//parse the mem map
+            exec_kernel(load_kernel(mbr->partition[m].first_lba), &mboot_info);//prepare the parameter then execute the kernel with the right parameters
+            break;//If the bootable field of a partition is equal to BOOTABLE_PARTITION, then it is bootable.
+        }
+    }
     /* exec_kernel should never return */
     panic ("Fail to load kernel.");
 }

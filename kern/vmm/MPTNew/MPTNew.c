@@ -16,7 +16,15 @@
 unsigned int alloc_page (unsigned int proc_index, unsigned int vaddr, unsigned int perm)
 {
   // TODO
-  return 0;
+  unsigned int  address_alloc=container_alloc(proc_index);
+  if (address_alloc==0)
+  {
+    return MagicNumber;
+  }
+  else{
+    int index=map_page(proc_index,vaddr,address_alloc,perm);
+    return index==0?MagicNumber:index;
+  }
 }
 
 

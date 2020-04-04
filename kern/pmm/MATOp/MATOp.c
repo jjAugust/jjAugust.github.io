@@ -16,10 +16,23 @@
   * 2. Optimize the code with the memorization techniques so that you do not
   *    have to scan the data-structure from scratch every time.
   */
+#define unavailable 0
+#define kernel 1
+#define available 2
+#define unallocated 0
+#define allocated 1
+
 unsigned int
 palloc()
 {
   // TODO
+  for (int i = 0x40000000/4096; i < 0xF0000000/4096; ++i)
+  {
+    if(get_authority(i)==available && get_allocated(i)==unallocated){
+      set_authority_allocated(i,available,allocated);
+      return i;
+    }
+  }
   return 0;
 }
 
@@ -37,4 +50,7 @@ void
 pfree(unsigned int pfree_index)
 {
   // TODO
+  if(get_allocated(pfree_index)==allocated){
+    set_authority_allocated(pfree_index,get_authority(pfree_index),unallocated);
+  }
 }

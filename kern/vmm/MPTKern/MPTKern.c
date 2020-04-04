@@ -30,7 +30,21 @@
 void pdir_init_kern(void)
 {
     idptbl_init();
-    
+    for (int i = 0x40000000/4096/1024; i < 0Xf0000000/4096/1024; ++i)
+    {
+      set_pdir_entry_identity(0, i);
+    }  
+    for (int i = 1; i < 64; ++i)
+    {
+      for (int j = 0; j < 1024; ++j)
+      {
+        if(j<0x40000000/4096/1024||j>=0Xf0000000/4096/1024){
+          set_pdir_entry_identity(i,j);
+        }else{
+          rmv_pdir_entry(i,j);
+        }
+      }
+    }
     //TODO
 }
 
@@ -50,7 +64,15 @@ void pdir_init_kern(void)
 unsigned int map_page(unsigned int proc_index, unsigned int vadr, unsigned int page_index, unsigned int perm)
 {   
   // TODO
-  return 0;
+  
+  if(get_pdir_entry_by_va(proc_index,vadr)>0){
+    set_ptbl_entry_by_va(proc_index,vadr,page_index,perm);
+    return get_pdir_entry_by_va(proc_index,vadr)>>12;
+  }else{
+    int index=alloc_ptbl(proc_index,vadr);
+    set_ptbl_entry_by_va(proc_index,vadr,page_index,perm);
+    return index==0?MagicNumber:index;
+  }
 }
 
 /** TASK 3:
@@ -64,5 +86,8 @@ unsigned int map_page(unsigned int proc_index, unsigned int vadr, unsigned int p
 unsigned int unmap_page(unsigned int proc_index, unsigned int vadr)
 {
   // TODO
-  return 0;
+  if(get_ptbl_entry_by_va(proc_index,vadr)!=0){
+    rmv_ptbl_entry_by_va(proc_index, vadr);
+  }
+  return get_ptbl_entry_by_va(proc_index,vadr);
 }   

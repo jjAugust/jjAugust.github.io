@@ -2,6 +2,13 @@
 #include <lib/x86.h>
 #include "import.h"
 
+
+#define unavailable 0
+#define kernel 1
+#define available 2
+#define unallocated 0
+#define allocated 1
+
 /** - SContainer is an object used to keep track of the resource usage of each process,
   *    as well as the parent/child relationships between processes.
   * - To describe containers in more detail, we first need to define a way to
@@ -45,6 +52,15 @@ void container_init(unsigned int mbi_addr)
     *    in the physical memory data-structure you implemented.
     */
   //TODO
+  for (int i = 0; i < get_nps(); ++i)
+  {
+    /* code */
+    if (get_authority(i)==available && get_allocated(i)==unallocated)
+    {
+      /* code */
+      real_quota++;
+    }
+  }
 
   KERN_DEBUG("\nreal quota: %d\n\n", real_quota);
 
@@ -63,7 +79,7 @@ void container_init(unsigned int mbi_addr)
 unsigned int container_get_parent(unsigned int id)
 {
   // TODO
-  return 0;
+  return CONTAINER[id].parent;
 }
 
 
@@ -73,7 +89,7 @@ unsigned int container_get_parent(unsigned int id)
 unsigned int container_get_nchildren(unsigned int id)
 {
   // TODO
-  return 0;
+  return CONTAINER[id].nchildren;
 }
 
 
@@ -83,7 +99,7 @@ unsigned int container_get_nchildren(unsigned int id)
 unsigned int container_get_quota(unsigned int id)
 {
   // TODO
-  return 0;
+  return CONTAINER[id].quota;
 }
 
 
@@ -93,7 +109,7 @@ unsigned int container_get_quota(unsigned int id)
 unsigned int container_get_usage(unsigned int id)
 {
   // TODO
-  return 0;
+  return CONTAINER[id].usage;
 }
 
 
@@ -105,7 +121,7 @@ unsigned int container_get_usage(unsigned int id)
 unsigned int container_can_consume(unsigned int id, unsigned int n)
 {
   // TODO
-  return 0;
+  return CONTAINER[id].quota - CONTAINER[id].usage>=n?1:0;
 }
 
 /**
@@ -131,6 +147,17 @@ unsigned int container_split(unsigned int id, unsigned int quota)
     */
   //TODO
 
+  CONTAINER[id].quota = CONTAINER[id].quota;
+  CONTAINER[id].usage = CONTAINER[id].usage+quota;
+  CONTAINER[id].parent = CONTAINER[id].parent;
+  CONTAINER[id].nchildren = CONTAINER[id].nchildren+1;
+  CONTAINER[id].used = 1;
+
+  CONTAINER[child].quota = quota;
+  CONTAINER[child].usage = 0;
+  CONTAINER[child].parent = id;
+  CONTAINER[child].nchildren = 0;
+  CONTAINER[child].used = 1;
 
   return child;
 }
@@ -146,7 +173,12 @@ unsigned int container_alloc(unsigned int id)
   /*
    * TODO: implement the function here.
    */
-
+  if (CONTAINER[id].usage+1<=CONTAINER[id].quota)
+  {
+    /* code */
+    CONTAINER[id].usage++;
+    return palloc();
+  }
   return 0;
 }
 
@@ -159,4 +191,9 @@ unsigned int container_alloc(unsigned int id)
 void container_free(unsigned int id, unsigned int page_index)
 {
   // TODO
+  if(CONTAINER[id].usage>0){
+    CONTAINER[id].usage--;
+    pfree(page_index);
+  }
+  
 }

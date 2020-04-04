@@ -1,6 +1,5 @@
 /*
   * Filename: boot1.S
-
  * Description:
  * - boot1 enables the A20 line, reads the physical memory map, and
  *   configures and switches the CPU into 32-bit protected mode.
@@ -40,6 +39,11 @@
     ***************************************************************************/
 
     /* TODO: PRINT STARTUP MESSAGE HERE */
+    
+    /*Setup normal video mode (80 x 25 text), and print a start up message (STARTUP_MSG)*/
+    movb $0xe, %ah 
+    mov  $STARTUP_MSG , %si
+    call Print_Char
 
     /* enable A20
      * This is done because of a quirk in the x86 architecture.
@@ -94,7 +98,11 @@ e820.fail:
     /***************************************************************************
      * TODO: PRINT FAILURE MESSAGE HERE
      **************************************************************************/
-    jmp    spin16
+    /*Setup normal video mode (80 x 25 text), and print a FAILURE message (E820_FAIL_MSG)*/
+    movb $0xe, %ah 
+    mov  $E820_FAIL_MSG , %si
+    call Print_Char
+    
 
 spin16:
     hlt
@@ -104,18 +112,54 @@ switch_prot:
     *TODO: SETUP JUMP TO PROTECTED MODE
     ***************************************************************************/
 
+    /*  Configure the CPU to use GDT*/
+    lgdt gdtdesc      
+    
+    /*step 4.1 Switch CPU to protected mode */
+    movl %cr0,%eax
+    xor $0x1, %eax
+    movl %eax, %cr0
+    
+    /*step 4.2 issue a long jump */
+
+    ljmp $PROT_MODE_CSEG, $desc
+
     /* assemble the following instructions in 32-bit mode */
     .code32
+desc:
     /* We are now in protected mode! */
 
     /***************************************************************************
     * YOUR 32-bit mode code here
     ***************************************************************************/
 
+    /*step 4.3 set up the rest of the segment registers to (data segment entry in the GDT)*/
+
+    mov $PROT_MODE_DSEG , %bx
+    mov %bx , %ds
+    mov %bx , %es
+    mov %bx , %fs
+    mov %bx , %gs
+    mov %bx , %ss
+
+    pushl $smap
+    pushl $0x7c00
+    call boot1main
+
     /* It shall never reach here! */
 spin:
     hlt
 
+    /*printout a character function by myself*/
+    .globl Print_Char
+Print_Char:
+    lodsb
+    cmp $0, %al
+    je done
+    int $0x10
+    jmp Print_Char
+done:
+    ret
 /*******************************************************************************
 *   DATA STRUCTURES
 *******************************************************************************/
@@ -130,8 +174,6 @@ NO_BOOTABLE_MSG:
     .ascii    "No bootable partition.\r\n\0"
 
     .p2align    2    /* force 4-byte alignment */
-
-
 
 /* The Global Descriptor Table (GDT)
  *

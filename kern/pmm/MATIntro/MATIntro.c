@@ -18,6 +18,15 @@ static unsigned int NUM_PAGES;
  */
 
 
+struct PP_Info
+{
+  unsigned int authority;//0 unavailable, 1 kernel, 2 available
+  unsigned int allocated;//0 unallocated, 1 allocated
+};
+
+struct PP_Info physical_page_info[1<<20];
+
+
 /** The getter function for NUM_PAGES. */
 unsigned int
 get_nps(void)
@@ -30,4 +39,22 @@ void
 set_nps(unsigned int nps)
 {
   NUM_PAGES = nps;
+}
+
+void
+set_authority_allocated( int page, int authority_val, int allocated_val){
+  physical_page_info[page].authority=authority_val;
+  physical_page_info[page].allocated=allocated_val;
+}
+
+unsigned int
+get_authority(int page)
+{
+  return physical_page_info[page].authority;
+}
+
+unsigned int
+get_allocated(int page)
+{
+  return physical_page_info[page].allocated;
 }

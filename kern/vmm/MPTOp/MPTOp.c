@@ -28,7 +28,8 @@
 unsigned int get_pdir_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 {
     // TODO
-    return 0;
+    
+  return get_pdir_entry(proc_index,vaddr>>22);
 }
 
 /** TASK 2:
@@ -40,7 +41,8 @@ unsigned int get_pdir_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 unsigned int get_ptbl_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 {
     // TODO
-    return 0;
+
+    return  get_pdir_entry_by_va(proc_index,vaddr)==0?0:get_ptbl_entry(proc_index,vaddr>>22,(vaddr&0x003ff000)>>12);
 }         
 
 /** TASK 3:
@@ -51,6 +53,7 @@ unsigned int get_ptbl_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 void rmv_pdir_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 {
     // TODO
+  rmv_pdir_entry(proc_index,vaddr>>22);
 }
 
 /** TASK 4:
@@ -60,6 +63,7 @@ void rmv_pdir_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 void rmv_ptbl_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 {
     // TODO
+  rmv_ptbl_entry(proc_index,vaddr>>22,(vaddr&0x003ff000)>>12);
 }
 
 /** TASK 5:
@@ -69,6 +73,7 @@ void rmv_ptbl_entry_by_va(unsigned int proc_index, unsigned int vaddr)
 void set_pdir_entry_by_va(unsigned int proc_index, unsigned int vaddr, unsigned int page_index)
 {
     // TODO
+  set_pdir_entry(proc_index,vaddr>>22,page_index);
 }   
 
 /** TASK 6:
@@ -79,6 +84,7 @@ void set_pdir_entry_by_va(unsigned int proc_index, unsigned int vaddr, unsigned 
 void set_ptbl_entry_by_va(unsigned int proc_index, unsigned int vaddr, unsigned int page_index, unsigned int perm)
 {
     // TODO
+  set_ptbl_entry(proc_index,vaddr>>22,(vaddr&0x003ff000)>>12,page_index,perm);
 }
 
 /** TASK 7:
@@ -95,5 +101,17 @@ void set_ptbl_entry_by_va(unsigned int proc_index, unsigned int vaddr, unsigned 
 void idptbl_init(void)
 {
     // TODO
-
+  //container_init();
+  //void set_ptbl_entry_identity(unsigned int pde_index, unsigned int pte_index, unsigned int perm)
+  for (int i = 0; i < 1024; ++i)
+  {
+    for (int j = 0; j < 1024; ++j)
+    {
+      if(i<0x40000000/4096/1024||i>=0Xf0000000/4096/1024){
+          set_ptbl_entry_identity(i,j,PTE_P|PTE_W|PTE_G);
+      }else{
+          set_ptbl_entry_identity(i,j,PTE_P|PTE_W);
+      }
+    }
+  }
 }

@@ -13,7 +13,17 @@
 unsigned int alloc_ptbl(unsigned int proc_index, unsigned int vadr)
 {
   // TODO
-  return 0;
+  int page_index=container_alloc(proc_index);
+  if(page_index>0){
+    set_pdir_entry_by_va(proc_index,vadr,page_index);
+    for (int i = 0; i < 1024; ++i)
+    {
+      rmv_ptbl_entry(proc_index, vadr>>22, i);
+    }
+    return page_index;
+  }else{
+    return 0;
+  }
 }
 
 /** TASK 2:
@@ -27,4 +37,7 @@ unsigned int alloc_ptbl(unsigned int proc_index, unsigned int vadr)
 void free_ptbl(unsigned int proc_index, unsigned int vadr)
 {
   // TODO
+  rmv_pdir_entry_by_va(proc_index,vadr);
+  container_free(proc_index,get_pdir_entry_by_va(proc_index,vadr));
 }
+

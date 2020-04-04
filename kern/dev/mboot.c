@@ -195,4 +195,8 @@ void
 enable_paging(void)
 {
     //TODO
+    lcr4(rcr4()|CR4_PGE);
+
+    lcr0(rcr0() | CR0_MP | CR0_NE | CR0_WP | CR0_AM | CR0_PE | CR0_PG & (~(CR0_EM | CR0_TS)));
+
 }

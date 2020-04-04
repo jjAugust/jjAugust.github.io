@@ -51,6 +51,7 @@ unsigned int IDPTbl[1024][1024] gcc_aligned(PAGESIZE);
 void set_pdir_base(unsigned int index)
 {
     // TODO
+  set_cr3(PDirPool[index]);
 }
 
 /** TASK 2:
@@ -60,7 +61,7 @@ void set_pdir_base(unsigned int index)
 unsigned int get_pdir_entry(unsigned int proc_index, unsigned int pde_index)
 {
     // TODO
-    return 0;
+    return (unsigned int)PDirPool[proc_index][pde_index];
 }
 
 /** TASK 3:
@@ -71,6 +72,7 @@ unsigned int get_pdir_entry(unsigned int proc_index, unsigned int pde_index)
 void set_pdir_entry(unsigned int proc_index, unsigned int pde_index, unsigned int page_index)
 {
     // TODO
+    PDirPool[proc_index][pde_index]=(char *)(page_index<<12|PT_PERM_PTU);
 }
 
 /** TASK 4:
@@ -83,6 +85,7 @@ void set_pdir_entry(unsigned int proc_index, unsigned int pde_index, unsigned in
 void set_pdir_entry_identity(unsigned int proc_index, unsigned int pde_index)
 {
     // TODO
+  PDirPool[proc_index][pde_index]=(char *)((unsigned int)IDPTbl[pde_index]|PT_PERM_PTU);
 }
 
 /** TASK 5:
@@ -93,6 +96,7 @@ void set_pdir_entry_identity(unsigned int proc_index, unsigned int pde_index)
 void rmv_pdir_entry(unsigned int proc_index, unsigned int pde_index)
 {
     // TODO
+  PDirPool[proc_index][pde_index]=(char *)(PT_PERM_UP);
 }
 
 /** TASK 6:
@@ -106,8 +110,8 @@ void rmv_pdir_entry(unsigned int proc_index, unsigned int pde_index)
   */
 unsigned int get_ptbl_entry(unsigned int proc_index, unsigned int pde_index, unsigned int pte_index)
 {
-    // TODO
-    return 0;
+    // TOD
+    return ((unsigned int*)((unsigned int)((unsigned int)(PDirPool[proc_index][pde_index])>>12)<<12))[pte_index];
 }
 
 /** TASK 7:
@@ -118,6 +122,9 @@ unsigned int get_ptbl_entry(unsigned int proc_index, unsigned int pde_index, uns
 void set_ptbl_entry(unsigned int proc_index, unsigned int pde_index, unsigned int pte_index, unsigned int page_index, unsigned int perm)
 {
     // TODO
+  unsigned int* ptbl_entry=(unsigned int*)((unsigned int)((unsigned int)(PDirPool[proc_index][pde_index])>>12)<<12);
+  ptbl_entry[pte_index]=page_index<<12|perm;
+
 }
 
 /** TASK 8:
@@ -140,6 +147,11 @@ void set_ptbl_entry(unsigned int proc_index, unsigned int pde_index, unsigned in
 void set_ptbl_entry_identity(unsigned int pde_index, unsigned int pte_index, unsigned int perm)
 {
     // TODO
+   unsigned int i=pde_index;
+   unsigned int j=pte_index;
+   unsigned int num_columns=1024;
+   unsigned int size_of_each_entry=4096;
+  IDPTbl[pde_index][pte_index]=(i * num_columns + j) * size_of_each_entry|perm;
 }
 
 /** TASK 9:
@@ -150,4 +162,6 @@ void set_ptbl_entry_identity(unsigned int pde_index, unsigned int pte_index, uns
 void rmv_ptbl_entry(unsigned int proc_index, unsigned int pde_index, unsigned int pte_index)
 {
     // TODO
+  unsigned int* ptbl_entry=(unsigned int*)((unsigned int)((unsigned int)(PDirPool[proc_index][pde_index])>>12)<<12);
+  ptbl_entry[pte_index]=0;
 }
