@@ -30,7 +30,7 @@
 void pdir_init_kern(void)
 {
     idptbl_init();
-    for (int i = 0x40000000/4096/1024; i < 0Xf0000000/4096/1024; ++i)
+    for (int i = 0; i < 1024; ++i)
     {
       set_pdir_entry_identity(0, i);
     }  
