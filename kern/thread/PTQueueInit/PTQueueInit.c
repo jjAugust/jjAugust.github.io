@@ -15,6 +15,9 @@ void tqueue_init(void)
 	tcb_init();
 
   // TODO
+  for(  unsigned int i = 0; i < NUM_IDS; i++)
+    tqueue_init_at_id(i);
+  // TODO
 }
 
 /** TASK 2:
