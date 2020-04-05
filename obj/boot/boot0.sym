@@ -1,8 +1,0 @@
-00007c00 T start
-00007c3e t STARTUP_MSG
-00007c50 t LOAD_FAIL_MSG
-00007c6e t Print_Char
-00007c77 t done
-00007c78 T __bss_start
-00007c78 T _edata
-00007c78 T _end
