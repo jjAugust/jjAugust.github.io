@@ -10,14 +10,10 @@
   */
 void tqueue_init(void)
 {
-  // TODO: define your local variables here.
-
+    // TODO
 	tcb_init();
-
-  // TODO
-  for(  unsigned int i = 0; i < NUM_IDS; i++)
+  for(int i = 0; i < NUM_IDS; i++)
     tqueue_init_at_id(i);
-  // TODO
 }
 
 /** TASK 2:
@@ -42,6 +38,16 @@ void tqueue_init(void)
 void tqueue_enqueue(unsigned int chid, unsigned int pid)
 {
   // TODO
+   unsigned int tail = tqueue_get_tail(chid);
+  if(tail == NUM_IDS){
+    tqueue_set_head(chid, pid);
+    tqueue_set_tail(chid, pid);
+  }else{
+    tqueue_set_tail(chid, pid);
+    tcb_set_next(tail, pid);
+    tcb_set_prev(pid, tail);
+    tcb_set_next(pid, NUM_IDS);
+  }
 }
 
 /** TASK 3:
@@ -61,7 +67,17 @@ void tqueue_enqueue(unsigned int chid, unsigned int pid)
 unsigned int tqueue_dequeue(unsigned int chid)
 {
   // TODO
-  return 0;
+  unsigned int head = tqueue_get_head(chid);
+  unsigned int next = tcb_get_next(head);
+
+  if(head == NUM_IDS) return NUM_IDS;
+  next == NUM_IDS?tqueue_set_tail(chid, next):tcb_set_prev(next, NUM_IDS);
+
+  tqueue_set_head(chid, next);
+  tcb_set_next(head, NUM_IDS);
+  tcb_set_prev(head, NUM_IDS);
+
+  return head;
 }
 
 /** TASK 4:
@@ -79,4 +95,22 @@ unsigned int tqueue_dequeue(unsigned int chid)
 void tqueue_remove(unsigned int chid, unsigned int pid)
 {
   // TODO
+  unsigned int next = tcb_get_next(pid);
+  unsigned int prev = tcb_get_prev(pid);
+
+  if(next == prev && next == NUM_IDS){
+    tqueue_set_head(chid, NUM_IDS);
+    tqueue_set_tail(chid, NUM_IDS);
+  }else if(prev == NUM_IDS){
+    tqueue_set_head(chid, next);
+    tcb_set_prev(next, NUM_IDS);
+  }else if(next == NUM_IDS){
+    tqueue_set_tail(chid, prev);
+    tcb_set_next(prev, NUM_IDS);
+  }else{
+    tcb_set_next(prev, next);
+    tcb_set_prev(next, prev);
+  }
+    tcb_set_next(pid, NUM_IDS);
+    tcb_set_prev(pid, NUM_IDS);
 }

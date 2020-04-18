@@ -144,7 +144,7 @@ void interrupt_handler (void)
   *   - Route the trap to appropriate handlers.
   *       - All trap identifiers are defined in: dev/intr.h
   *       - We have 3 types of trap handlers:
-  *         1. exception_handler => call if [trapno] is between T_DIVIDE and T_SECEV.
+  *         1. exception_handler => call if [c] is between T_DIVIDE and T_SECEV.
   *         2. interrupt_handler => call if [trapno] is between T_IRQ0 + IRQ_TIMER and T_IRQ0 + IRQ_IDE2
   *         3. syscall_dispatch  => call if [trapno] is T_SYSCALL
   *            You will implement syscall_dispatch() in TDispatch layer. Simply call it
@@ -158,7 +158,19 @@ void interrupt_handler (void)
 void trap (tf_t *tf)
 {
     // TODO
+    unsigned int CURID = get_curid();
+    uctx_pool[CURID] = *tf;//save the content
 
+    set_pdir_base(0);
+
+    uint32_t trapno=tf->trapno;
+    if(trapno >= T_DIVIDE && trapno <= T_SECEV){
+      exception_handler();
+    }else if(trapno >= T_IRQ0 + IRQ_TIMER && trapno <= T_IRQ0 + IRQ_IDE2){
+      interrupt_handler();
+    }else if(trapno == T_SYSCALL){
+      syscall_dispatch();
+    }
 	  // Trap handled: call proc_start_user() to initiate return from trap.
     proc_start_user (); 
 }

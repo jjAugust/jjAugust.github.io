@@ -12,4 +12,14 @@
 void syscall_dispatch(void)
 {
 	// TODO
+	unsigned int eax = syscall_get_arg1();
+	if(eax==SYS_puts){
+		sys_puts();
+	}else if(eax==SYS_spawn){
+		sys_spawn();
+	}else if(eax==SYS_yield){
+		sys_yield();
+	}else{
+		syscall_set_errno(E_INVAL_CALLNR);
+	}
 }

@@ -86,6 +86,26 @@ extern uint8_t _binary___obj_user_pingpong_ding_start[];
 void sys_spawn(void)
 {
   // TODO
+  unsigned int elf_id = syscall_get_arg2();
+  unsigned int quota  = syscall_get_arg3();
+  unsigned int proc;
+
+  if(elf_id==1){
+    proc = proc_create(_binary___obj_user_pingpong_ping_start, quota);
+  }else if(elf_id==2){
+    proc = proc_create(_binary___obj_user_pingpong_pong_start, quota);
+  }else if(elf_id==3){
+    proc = proc_create(_binary___obj_user_pingpong_ding_start, quota);
+  }else{
+    proc = NUM_IDS;
+  }
+  if(proc != NUM_IDS){//successful
+    syscall_set_errno(E_SUCC);
+    syscall_set_retval1(proc);
+  } else{//fail
+    syscall_set_errno(E_INVAL_PID);
+    syscall_set_retval1(NUM_IDS);
+  }
 }
 
 /** TASK 2:
@@ -101,4 +121,6 @@ void sys_spawn(void)
 void sys_yield(void)
 {
   // TODO
+  thread_yield();
+  syscall_set_errno(E_SUCC);
 }

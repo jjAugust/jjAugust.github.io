@@ -11,5 +11,6 @@
   */
 void tcb_init(void)
 {
-  // TODO
+	for(int i = 0; i < NUM_IDS; i++)
+		tcb_init_at_id(i);
 }

@@ -37,6 +37,18 @@ cswitch:
 
 	  *  - The saved eip in this data-structure should point to the return address of this function.
 	  */
+	
+	movl %esp, 0(%eax)
+	movl %edi, 4(%eax)
+	movl %esi, 8(%eax)
+	movl %ebx, 12(%eax)
+	movl %ebp, 16(%eax)
+
+/**???s
+
+	movl 0(%esp), %ecx
+	movl %ecx, 20(%eax)
+*/
 
 
 	/** TASK 2:
@@ -47,8 +59,15 @@ cswitch:
 	  *    "to" as the return address. For this, we want to place the eip field of kctx structure onto the top of the stack (i.e. 0(%esp))
 	  *    so that it will use that value in the ret statement.  
 	  */
-
-
+	movl 0(%edx), %esp
+	movl 4(%edx), %edi
+	movl 8(%edx), %esi
+	movl 12(%edx), %ebx
+	movl 16(%edx), %ebp
+/**???s
+	movl 20(%edx), %ecx
+	movl %ecx, 0(%esp)
+*/
 	/**
 	  * The return value is stored in eax. Returns 0.
 	  */
