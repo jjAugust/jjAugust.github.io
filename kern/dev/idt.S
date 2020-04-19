@@ -134,9 +134,34 @@ _alltraps:
 .p2align 4, 0x90		/* 16-byte alignment, nop filled */
 trap_return:
 	/* TODO */
-	movl 4(%esp), %esp
+
+	/*stack definition
+	*.
+	*.
+	*.
+	*--------------(esp)
+	*return address
+	*--------------
+	*parameter 1 (tf_t * user_context)
+	*--------------
+	*.
+	*.
+  	*/
+	movl 4(%esp), %esp /*esp point to the (tf_t * user_context) address, return address */
 	popal
 	popl %es 
 	popl %ds 
+	/*stack definition
+	*.
+	*.
+	*.
+	*--------------esp
+	*trapno
+	*--------------
+	*errcode
+	*--------------
+	*.
+	*.
+  	*/
 	addl $8, %esp
 	iret 

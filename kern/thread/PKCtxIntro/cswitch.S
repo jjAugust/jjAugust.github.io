@@ -43,12 +43,7 @@ cswitch:
 	movl %esi, 8(%eax)
 	movl %ebx, 12(%eax)
 	movl %ebp, 16(%eax)
-
-/**???s
-
-	movl 0(%esp), %ecx
-	movl %ecx, 20(%eax)
-*/
+	movl 0(%esp),20(%eax)
 
 
 	/** TASK 2:
@@ -64,10 +59,7 @@ cswitch:
 	movl 8(%edx), %esi
 	movl 12(%edx), %ebx
 	movl 16(%edx), %ebp
-/**???s
-	movl 20(%edx), %ecx
-	movl %ecx, 0(%esp)
-*/
+	movl 20(%edx),0(%esp)
 	/**
 	  * The return value is stored in eax. Returns 0.
 	  */
