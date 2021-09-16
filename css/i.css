@@ -1,479 +1,347 @@
 @font-face { 
 font-family: 'AAmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('AA.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('AA.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'BBmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('BB.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('BB.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'CCmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('CC.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('CC.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'DDmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('DD.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('DD.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'EEmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('EE.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('EE.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'FFmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('FF.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('FF.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'GGmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('GG.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('GG.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'HHmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('HH.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('HH.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'IImirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('II.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('II.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'JJmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('JJ.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('JJ.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'KKmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('KK.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('KK.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'LLmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('LL.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('LL.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'MMmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('MM.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('MM.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'NNmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('NN.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('NN.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'OOmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('OO.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('OO.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'PPmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('PP.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('PP.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'QQmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('QQ.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('QQ.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'RRmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('RR.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('RR.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'SSmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('SS.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('SS.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'TTmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('TT.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('TT.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'UUmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('UU.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('UU.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'VVmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('VV.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('VV.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'WWmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('WW.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('WW.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'XXmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('XX.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('XX.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'YYmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('YY.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('YY.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'ZZmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('ZZ.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('ZZ.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'amirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('a.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('a.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'bmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('b.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('b.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'cmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('c.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('c.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'dmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('d.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('d.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'emirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('e.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('e.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'fmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('f.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('f.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'gmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('g.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('g.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'hmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('h.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('h.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'imirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('i.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('i.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'jmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('j.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('j.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'kmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('k.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('k.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'lmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('l.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('l.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'mmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('m.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('m.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'nmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('n.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('n.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'omirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('o.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('o.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'pmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('p.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('p.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'qmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('q.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('q.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'rmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('r.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('r.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'smirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('s.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('s.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'tmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('t.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('t.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'umirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('u.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('u.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'vmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('v.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('v.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'wmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('w.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('w.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'xmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('x.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('x.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'ymirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('y.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('y.ttf') format('truetype');
 } 
 @font-face { 
 font-family: 'zmirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('z.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('z.ttf') format('truetype');
 } 
 
 @font-face { 
 font-family: 'emptymirage'; 
-src:local('fontName Regular'), 
-	local('fontName'), 
-	url('fontName.woff') format('woff'), /*无此类字体*/
-	url('empty.ttf') format('truetype'), 
-	url('fontName.svg#fontName') format('svg'); /*无此类字体*/
+src: url('empty.ttf') format('truetype');
 } 
-#emptymirage{font-family:'emptymirage';font-size:40px;font-weight:bold;}
 
-#AAmirage{font-family:'AAmirage';font-size:40px;font-weight:bold;}
-#BBmirage{font-family:'BBmirage';font-size:40px;font-weight:bold;}
-#CCmirage{font-family:'CCmirage';font-size:40px;font-weight:bold;}
-#DDmirage{font-family:'DDmirage';font-size:40px;font-weight:bold;}
-#EEmirage{font-family:'EEmirage';font-size:40px;font-weight:bold;}
-#FFmirage{font-family:'FFmirage';font-size:40px;font-weight:bold;}
-#GGmirage{font-family:'GGmirage';font-size:40px;font-weight:bold;}
-#HHmirage{font-family:'HHmirage';font-size:40px;font-weight:bold;}
-#IImirage{font-family:'IImirage';font-size:40px;font-weight:bold;}
-#JJmirage{font-family:'JJmirage';font-size:40px;font-weight:bold;}
-#KKmirage{font-family:'KKmirage';font-size:40px;font-weight:bold;}
-#LLmirage{font-family:'LLmirage';font-size:40px;font-weight:bold;}
-#MMmirage{font-family:'MMmirage';font-size:40px;font-weight:bold;}
-#NNmirage{font-family:'NNmirage';font-size:40px;font-weight:bold;}
-#OOmirage{font-family:'OOmirage';font-size:40px;font-weight:bold;}
-#PPmirage{font-family:'PPmirage';font-size:40px;font-weight:bold;}
-#QQmirage{font-family:'QQmirage';font-size:40px;font-weight:bold;}
-#RRmirage{font-family:'RRmirage';font-size:40px;font-weight:bold;}
-#SSmirage{font-family:'SSmirage';font-size:40px;font-weight:bold;}
-#TTmirage{font-family:'TTmirage';font-size:40px;font-weight:bold;}
-#UUmirage{font-family:'UUmirage';font-size:40px;font-weight:bold;}
-#VVmirage{font-family:'VVmirage';font-size:40px;font-weight:bold;}
-#WWmirage{font-family:'WWmirage';font-size:40px;font-weight:bold;}
-#XXmirage{font-family:'XXmirage';font-size:40px;font-weight:bold;}
-#YYmirage{font-family:'YYmirage';font-size:40px;font-weight:bold;}
-#ZZmirage{font-family:'ZZmirage';font-size:40px;font-weight:bold;}
-#amirage{font-family:'amirage';font-size:40px;font-weight:bold;}
-#bmirage{font-family:'bmirage';font-size:40px;font-weight:bold;}
-#cmirage{font-family:'cmirage';font-size:40px;font-weight:bold;}
-#dmirage{font-family:'dmirage';font-size:40px;font-weight:bold;}
-#emirage{font-family:'emirage';font-size:40px;font-weight:bold;}
-#fmirage{font-family:'fmirage';font-size:40px;font-weight:bold;}
-#gmirage{font-family:'gmirage';font-size:40px;font-weight:bold;}
-#hmirage{font-family:'hmirage';font-size:40px;font-weight:bold;}
-#imirage{font-family:'imirage';font-size:40px;font-weight:bold;}
-#jmirage{font-family:'jmirage';font-size:40px;font-weight:bold;}
-#kmirage{font-family:'kmirage';font-size:40px;font-weight:bold;}
-#lmirage{font-family:'lmirage';font-size:40px;font-weight:bold;}
-#mmirage{font-family:'mmirage';font-size:40px;font-weight:bold;}
-#nmirage{font-family:'nmirage';font-size:40px;font-weight:bold;}
-#omirage{font-family:'omirage';font-size:40px;font-weight:bold;}
-#pmirage{font-family:'pmirage';font-size:40px;font-weight:bold;}
-#qmirage{font-family:'qmirage';font-size:40px;font-weight:bold;}
-#rmirage{font-family:'rmirage';font-size:40px;font-weight:bold;}
-#smirage{font-family:'smirage';font-size:40px;font-weight:bold;}
-#tmirage{font-family:'tmirage';font-size:40px;font-weight:bold;}
-#umirage{font-family:'umirage';font-size:40px;font-weight:bold;}
-#vmirage{font-family:'vmirage';font-size:40px;font-weight:bold;}
-#wmirage{font-family:'wmirage';font-size:40px;font-weight:bold;}
-#xmirage{font-family:'xmirage';font-size:40px;font-weight:bold;}
-#ymirage{font-family:'ymirage';font-size:40px;font-weight:bold;}
-#zmirage{font-family:'zmirage';font-size:40px;font-weight:bold;}
+@font-face { font-family: 'mirage0'; src: url('0.ttf') format('truetype');}
+@font-face { font-family: 'mirage1'; src: url('1.ttf') format('truetype');}
+@font-face { font-family: 'mirage2'; src: url('2.ttf') format('truetype');}
+@font-face { font-family: 'mirage3'; src: url('3.ttf') format('truetype');}
+@font-face { font-family: 'mirage4'; src: url('4.ttf') format('truetype');}
+@font-face { font-family: 'mirage5'; src: url('5.ttf') format('truetype');}
+@font-face { font-family: 'mirage6'; src: url('6.ttf') format('truetype');}
+@font-face { font-family: 'mirage7'; src: url('7.ttf') format('truetype');}
+@font-face { font-family: 'mirage8'; src: url('8.ttf') format('truetype');}
+@font-face { font-family: 'mirage9'; src: url('9.ttf') format('truetype');}
+@font-face { font-family: 'Ampersandmirage'; src: url('Ampersand.ttf') format('truetype');}
+@font-face { font-family: 'Asciicircummirage'; src: url('Asciicircum.ttf') format('truetype');}
+@font-face { font-family: 'Asteriskmirage'; src: url('Asterisk.ttf') format('truetype');}
+@font-face { font-family: 'Atmirage'; src: url('At.ttf') format('truetype');}
+@font-face { font-family: 'Backslashmirage'; src: url('Backslash.ttf') format('truetype');}
+@font-face { font-family: 'Bracketleftmirage'; src: url('Bracketleft.ttf') format('truetype');}
+@font-face { font-family: 'Bracketrightmirage'; src: url('Bracketright.ttf') format('truetype');}
+@font-face { font-family: 'Colonmirage'; src: url('Colon.ttf') format('truetype');} 
+@font-face { font-family: 'commamirage'; src: url('comma.ttf') format('truetype');} 
+@font-face { font-family: 'Dollarmirage'; src: url('Dollar.ttf') format('truetype');} 
+@font-face { font-family: 'Equalmirage'; src: url('Equal.ttf') format('truetype');} 
+@font-face { font-family: 'Exclammirage'; src: url('Exclam.ttf') format('truetype');} 
+@font-face { font-family: 'Greatermirage'; src: url('Greater.ttf') format('truetype');} 
+@font-face { font-family: 'Lessmirage'; src: url('Less.ttf') format('truetype');} 
+@font-face { font-family: 'Minusmirage'; src: url('Minus.ttf') format('truetype');} 
+@font-face { font-family: 'Numbersignmirage'; src: url('Numbersign.ttf') format('truetype');} 
+@font-face { font-family: 'Parennleftmirage'; src: url('Parennleft.ttf') format('truetype');} 
+@font-face { font-family: 'Parenrightmirage'; src: url('Parenright.ttf') format('truetype');} 
+@font-face { font-family: 'Percentmirage'; src: url('Percent.ttf') format('truetype');} 
+@font-face { font-family: 'Periodmirage'; src: url('Period.ttf') format('truetype');} 
+@font-face { font-family: 'Plusmirage'; src: url('Plus.ttf') format('truetype');} 
+@font-face { font-family: 'Questionmirage'; src: url('Question.ttf') format('truetype');} 
+@font-face { font-family: 'Quotedblmirage'; src: url('Quotedbl.ttf') format('truetype');} 
+@font-face { font-family: 'Quotesinglemirage'; src: url('Quotesingle.ttf') format('truetype');} 
+@font-face { font-family: 'Semicolonmirage'; src: url('Semicolon.ttf') format('truetype');} 
+@font-face { font-family: 'Slashmirage'; src: url('Slash.ttf') format('truetype');} 
+@font-face { font-family: 'Underscoremirage'; src: url('Underscore.ttf') format('truetype');} 
+
+
+#mirage0{font-family:'mirage0';}
+#mirage1{font-family:'mirage1';}
+#mirage2{font-family:'mirage2';}
+#mirage3{font-family:'mirage3';}
+#mirage4{font-family:'mirage4';}
+#mirage5{font-family:'mirage5';}
+#mirage6{font-family:'mirage6';}
+#mirage7{font-family:'mirage7';}
+#mirage8{font-family:'mirage8';}
+#mirage9{font-family:'mirage9';}
+#Ampersandmirage{font-family:'Ampersandmirage';}
+#Asciicircummirage{font-family:'Asciicircummirage';}
+#Asteriskmirage{font-family:'Asteriskmirage';}
+#Atmirage{font-family:'Atmirage';}
+#Backslashmirage{font-family:'Backslashmirage';}
+#Bracketleftmirage{font-family:'Bracketleftmirage';}
+#Bracketrightmirage{font-family:'Bracketrightmirage';}
+#Colonmirage{font-family:'Colonmirage';}
+#commamirage{font-family:'commamirage';}
+#Dollarmirage{font-family:'Dollarmirage';}
+#Equalmirage{font-family:'Equalmirage';}
+#Exclammirage{font-family:'Exclammirage';}
+#Greatermirage{font-family:'Greatermirage';}
+#Lessmirage{font-family:'Lessmirage';}
+#Minusmirage{font-family:'Minusmirage';}
+#Numbersignmirage{font-family:'Numbersignmirage';}
+#Parennleftmirage{font-family:'Parennleftmirage';}
+#Parenrightmirage{font-family:'Parenrightmirage';}
+#Percentmirage{font-family:'Percentmirage';}
+#Periodmirage{font-family:'Periodmirage';}
+#Plusmirage{font-family:'Plusmirage';}
+#Questionmirage{font-family:'Questionmirage';}
+#Quotedblmirage{font-family:'Quotedblmirage';}
+#Quotesinglemirage{font-family:'Quotesinglemirage';}
+#Semicolonmirage{font-family:'Semicolonmirage';}
+#Slashmirage{font-family:'Slashmirage';}
+#Underscoremirage{font-family:'Underscoremirage';}
+
+
+
+#emptymirage{font-family:'emptymirage';font-size: 8px;font-weight:bold;}
+
+#AAmirage{font-family:'AAmirage';}
+#BBmirage{font-family:'BBmirage';}
+#CCmirage{font-family:'CCmirage';}
+#DDmirage{font-family:'DDmirage';}
+#EEmirage{font-family:'EEmirage';}
+#FFmirage{font-family:'FFmirage';}
+#GGmirage{font-family:'GGmirage';}
+#HHmirage{font-family:'HHmirage';}
+#IImirage{font-family:'IImirage';}
+#JJmirage{font-family:'JJmirage';}
+#KKmirage{font-family:'KKmirage';}
+#LLmirage{font-family:'LLmirage';}
+#MMmirage{font-family:'MMmirage';}
+#NNmirage{font-family:'NNmirage';}
+#OOmirage{font-family:'OOmirage';}
+#PPmirage{font-family:'PPmirage';}
+#QQmirage{font-family:'QQmirage';}
+#RRmirage{font-family:'RRmirage';}
+#SSmirage{font-family:'SSmirage';}
+#TTmirage{font-family:'TTmirage';}
+#UUmirage{font-family:'UUmirage';}
+#VVmirage{font-family:'VVmirage';}
+#WWmirage{font-family:'WWmirage';}
+#XXmirage{font-family:'XXmirage';}
+#YYmirage{font-family:'YYmirage';}
+#ZZmirage{font-family:'ZZmirage';}
+#amirage{font-family:'amirage';}
+#bmirage{font-family:'bmirage';}
+#cmirage{font-family:'cmirage';}
+#dmirage{font-family:'dmirage';}
+#emirage{font-family:'emirage';}
+#fmirage{font-family:'fmirage';}
+#gmirage{font-family:'gmirage';}
+#hmirage{font-family:'hmirage';}
+#imirage{font-family:'imirage';}
+#jmirage{font-family:'jmirage';}
+#kmirage{font-family:'kmirage';}
+#lmirage{font-family:'lmirage';}
+#mmirage{font-family:'mmirage';}
+#nmirage{font-family:'nmirage';}
+#omirage{font-family:'omirage';}
+#pmirage{font-family:'pmirage';}
+#qmirage{font-family:'qmirage';}
+#rmirage{font-family:'rmirage';}
+#smirage{font-family:'smirage';}
+#tmirage{font-family:'tmirage';}
+#umirage{font-family:'umirage';}
+#vmirage{font-family:'vmirage';}
+#wmirage{font-family:'wmirage';}
+#xmirage{font-family:'xmirage';}
+#ymirage{font-family:'ymirage';}
+#zmirage{font-family:'zmirage';}
