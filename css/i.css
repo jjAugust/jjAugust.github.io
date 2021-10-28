@@ -1,3 +1,8 @@
+
+@font-face { 
+font-family: 'OpenSans-Bold'; 
+src: url('OpenSans-Bold.ttf') format('truetype');
+} 
 @font-face { 
 font-family: 'AAmirage'; 
 src: url('AA.ttf') format('truetype');
@@ -249,8 +254,9 @@ src: url('empty.ttf') format('truetype');
 @font-face { font-family: 'Semicolonmirage'; src: url('Semicolon.ttf') format('truetype');} 
 @font-face { font-family: 'Slashmirage'; src: url('Slash.ttf') format('truetype');} 
 @font-face { font-family: 'Underscoremirage'; src: url('Underscore.ttf') format('truetype');} 
+@font-face { font-family: 'OpenSans-Bold'; src: url('OpenSans-Bold.ttf') format('truetype');} 
 
-
+#OpenSansBold{font-family:'OpenSans-Bold';}
 #mirage0{font-family:'mirage0';}
 #mirage1{font-family:'mirage1';}
 #mirage2{font-family:'mirage2';}
