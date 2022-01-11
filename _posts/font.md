@@ -1,7 +1,0 @@
----
-category: 
-published: true
-layout: post
-title: font html experiment ver 2.1
----
-<span id="OpenSansBold">Alice</span>
