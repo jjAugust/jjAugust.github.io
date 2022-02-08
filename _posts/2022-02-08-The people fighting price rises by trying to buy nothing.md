@@ -5,9 +5,7 @@
 
 
 <div>
-<h1 class="entry-title"> 
-The people fighting price rises by trying to buy nothing
-</h1>
+
 <p class="entry-date">
 By Natalie Sherman & Michelle Fleury
 Business reporters, New York
