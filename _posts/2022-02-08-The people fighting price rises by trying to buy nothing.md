@@ -18,7 +18,7 @@ Business reporters, New York
 #### Prices in the US soared 7% last year - the biggest annual increase in nearly four decades. Now US consumers - whose spending powers the world's largest economy - are starting to signal they have had enough.
     
 #### "I find now, that I'm constantly tracking the cost of certain items," Sevan Tavoukdjian says. "It's changed which items I buy."
-The 34-year-old actor moved into his own apartment in New York City last month and when he saw how much it would cost to furnish it, he was shocked at the prices being charged.
+#### The 34-year-old actor moved into his own apartment in New York City last month and when he saw how much it would cost to furnish it, he was shocked at the prices being charged.
     
 #### So, he scrapped plans to buy furniture and instead sent a message to his neighbourhood “Buy Nothing” Facebook group, where people offer unwanted items for free.
 
