@@ -2,7 +2,7 @@
 category: 
 published: true
 layout: post
-title: Junjie Xiong 
+title: Price Rise
 description: Daily news Price Rise
 ---
 
