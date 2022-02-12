@@ -28,9 +28,7 @@ h1{
   transform: scale(1) skewY(15deg);
 }
 
-#letters:nth-letter(1){
-  id:PPmirage;
-}
+
 
 #letters:nth-letter(even),
 #letters:nth-letter(odd){
@@ -49,6 +47,10 @@ h1{
   color:yellow;
 }
 
+#letters:nth-letter(1){
+  color:yellow;
+  font-family:'FFmirage';
+}
 
 #pseudo:nth-letter(1):before,
 #pseudo:nth-letter(1):after{
