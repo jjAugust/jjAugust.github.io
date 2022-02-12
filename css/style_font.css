@@ -1,0 +1,125 @@
+body{
+ font-family:Helvetica, sans-serif;
+  font-size:50px;
+  text-align:center;
+}
+
+p, h1{
+  padding:0;
+  margin:20px;
+}
+h1{
+  font-size:120px;
+}
+
+#nthEverthing:nth-letter(odd),
+#nthEverthing:nth-letter(even){
+  display:inline-block;
+  text-transform:uppercase;
+  width:80px;
+  width:80px;
+}
+
+#nthEverthing:nth-letter(even){
+  transform: scale(1) skewY(-15deg);
+
+}
+#nthEverthing:nth-letter(odd){
+  transform: scale(1) skewY(15deg);
+}
+
+
+
+#letters:nth-letter(even),
+#letters:nth-letter(odd){
+  transition:all .4s;
+}
+#letters:nth-letter(odd):hover,
+#letters:nth-letter(even){
+  color:red;
+}
+
+#letters:nth-letter(odd){
+  color:blue;
+}
+
+#letters:nth-letter(even):hover{
+  color:yellow;
+}
+
+
+#pseudo:nth-letter(1):before,
+#pseudo:nth-letter(1):after{
+  content:'_'
+}
+
+#click:nth-word(2):before{
+  content:'>>';
+}
+#click:nth-word(2):after{
+  content:'<<'
+}
+
+
+#click:nth-word(2):hover:before{
+  content:'>>>>';
+}
+#click:nth-word(2):hover:after{
+  content:'<<<<'
+}
+
+
+#flip:nth-letter(2n){
+  display:inline-block;
+  margin:10px 10px;
+ -webkit-transform: rotateY(180deg);
+}
+
+/* Crazy text animation */
+#crazy:nth-letter(2n1){
+  display:inline-block;
+  margin:10px 20px;
+  transition:all .4s;
+  color:green;
+}
+
+#crazy:nth-letter(2n1):hover{
+  transform:rotateZ(180deg);
+  color:blue;
+}
+
+#font:nth-letter(n){
+  font-size:20px;
+  transition:all 1s linear;
+}
+
+
+#font:nth-letter(n):hover{
+  font-size:90px;
+}
+
+
+#word:first-word{
+  color:blue;
+}
+
+#word:nth-word(4){
+  color:green;
+}
+
+p#word:last-word{
+  color:red;
+}
+
+#firstLastWord:first-word{
+   font-size:90px;
+}
+
+#firstLastWord:last-word{
+  color:green;
+  transition:rotate 1s;
+}
+#firstLastWord:last-word{
+  display:inline-block;
+  transform: rotateZ(180deg);
+}
