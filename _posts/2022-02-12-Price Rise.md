@@ -2,7 +2,7 @@
 category: 
 published: true
 layout: post
-title: <p id="letters3">Price Rise</p>
+title: Price Rise
 description: Daily news
 ---
 
