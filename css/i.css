@@ -1,5 +1,5 @@
 @font-face { 
-font-family: 'cipherfont'; 
+font-family: 'cipherfontmirage'; 
 src: url('cipher1674560774.ttf') format('truetype');
 } 
 
@@ -361,4 +361,4 @@ src: url('empty.ttf') format('truetype');
 #ymirage{font-family:'ymirage';}
 #zmirage{font-family:'zmirage';}
 
-#cipherfontmirage{font-family:'cipherfont';}
+#cipherfontmirage{font-family:'cipherfontmirage';}
