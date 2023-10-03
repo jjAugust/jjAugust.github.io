@@ -1,0 +1,183 @@
+
+@font-face { font-family: 'AAmirage'; src: url('https://xiongusf.github.io/AA.ttf') format('truetype');} 
+@font-face { font-family: 'BBmirage'; src: url('https://xiongusf.github.io/BB.ttf') format('truetype');} 
+@font-face { font-family: 'CCmirage'; src: url('https://xiongusf.github.io/CC.ttf') format('truetype');} 
+@font-face { font-family: 'DDmirage'; src: url('https://xiongusf.github.io/DD.ttf') format('truetype');} 
+@font-face { font-family: 'EEmirage'; src: url('https://xiongusf.github.io/EE.ttf') format('truetype');} 
+@font-face { font-family: 'FFmirage'; src: url('https://xiongusf.github.io/FF.ttf') format('truetype');} 
+@font-face { font-family: 'GGmirage'; src: url('https://xiongusf.github.io/GG.ttf') format('truetype');} 
+@font-face { font-family: 'HHmirage'; src: url('https://xiongusf.github.io/HH.ttf') format('truetype');} 
+@font-face { font-family: 'IImirage'; src: url('https://xiongusf.github.io/II.ttf') format('truetype');} 
+@font-face { font-family: 'JJmirage'; src: url('https://xiongusf.github.io/JJ.ttf') format('truetype');} 
+@font-face { font-family: 'KKmirage'; src: url('https://xiongusf.github.io/KK.ttf') format('truetype');} 
+@font-face { font-family: 'LLmirage'; src: url('https://xiongusf.github.io/LL.ttf') format('truetype');} 
+@font-face { font-family: 'MMmirage'; src: url('https://xiongusf.github.io/MM.ttf') format('truetype');} 
+@font-face { font-family: 'NNmirage'; src: url('https://xiongusf.github.io/NN.ttf') format('truetype');} 
+@font-face { font-family: 'OOmirage'; src: url('https://xiongusf.github.io/OO.ttf') format('truetype');} 
+@font-face { font-family: 'PPmirage'; src: url('https://xiongusf.github.io/PP.ttf') format('truetype');} 
+@font-face { font-family: 'QQmirage'; src: url('https://xiongusf.github.io/QQ.ttf') format('truetype');} 
+@font-face { font-family: 'RRmirage'; src: url('https://xiongusf.github.io/RR.ttf') format('truetype');} 
+@font-face { font-family: 'SSmirage'; src: url('https://xiongusf.github.io/SS.ttf') format('truetype');} 
+@font-face { font-family: 'TTmirage'; src: url('https://xiongusf.github.io/TT.ttf') format('truetype');} 
+@font-face { font-family: 'UUmirage'; src: url('https://xiongusf.github.io/UU.ttf') format('truetype');} 
+@font-face { font-family: 'VVmirage'; src: url('https://xiongusf.github.io/VV.ttf') format('truetype');} 
+@font-face { font-family: 'WWmirage'; src: url('https://xiongusf.github.io/WW.ttf') format('truetype');} 
+@font-face { font-family: 'XXmirage'; src: url('https://xiongusf.github.io/XX.ttf') format('truetype');} 
+@font-face { font-family: 'YYmirage'; src: url('https://xiongusf.github.io/YY.ttf') format('truetype');} 
+@font-face { font-family: 'ZZmirage'; src: url('https://xiongusf.github.io/ZZ.ttf') format('truetype');} 
+@font-face { font-family: 'amirage'; src: url('https://xiongusf.github.io/a.ttf') format('truetype');} 
+@font-face { font-family: 'bmirage'; src: url('https://xiongusf.github.io/b.ttf') format('truetype');} 
+@font-face { font-family: 'cmirage'; src: url('https://xiongusf.github.io/c.ttf') format('truetype');} 
+@font-face { font-family: 'dmirage'; src: url('https://xiongusf.github.io/d.ttf') format('truetype');} 
+@font-face { font-family: 'emirage'; src: url('https://xiongusf.github.io/e.ttf') format('truetype');} 
+@font-face { font-family: 'fmirage'; src: url('https://xiongusf.github.io/f.ttf') format('truetype');} 
+@font-face { font-family: 'gmirage'; src: url('https://xiongusf.github.io/g.ttf') format('truetype');} 
+@font-face { font-family: 'hmirage'; src: url('https://xiongusf.github.io/h.ttf') format('truetype');} 
+@font-face { font-family: 'imirage'; src: url('https://xiongusf.github.io/i.ttf') format('truetype');} 
+@font-face { font-family: 'jmirage'; src: url('https://xiongusf.github.io/j.ttf') format('truetype');} 
+@font-face { font-family: 'kmirage'; src: url('https://xiongusf.github.io/k.ttf') format('truetype');} 
+@font-face { font-family: 'lmirage'; src: url('https://xiongusf.github.io/l.ttf') format('truetype');} 
+@font-face { font-family: 'mmirage'; src: url('https://xiongusf.github.io/m.ttf') format('truetype');} 
+@font-face { font-family: 'nmirage'; src: url('https://xiongusf.github.io/n.ttf') format('truetype');} 
+@font-face { font-family: 'omirage'; src: url('https://xiongusf.github.io/o.ttf') format('truetype');} 
+@font-face { font-family: 'pmirage'; src: url('https://xiongusf.github.io/p.ttf') format('truetype');} 
+@font-face { font-family: 'qmirage'; src: url('https://xiongusf.github.io/q.ttf') format('truetype');} 
+@font-face { font-family: 'rmirage'; src: url('https://xiongusf.github.io/r.ttf') format('truetype');} 
+@font-face { font-family: 'smirage'; src: url('https://xiongusf.github.io/s.ttf') format('truetype');} 
+@font-face { font-family: 'tmirage'; src: url('https://xiongusf.github.io/t.ttf') format('truetype');} 
+@font-face { font-family: 'umirage'; src: url('https://xiongusf.github.io/u.ttf') format('truetype');} 
+@font-face { font-family: 'vmirage'; src: url('https://xiongusf.github.io/v.ttf') format('truetype');} 
+@font-face { font-family: 'wmirage'; src: url('https://xiongusf.github.io/w.ttf') format('truetype');} 
+@font-face { font-family: 'xmirage'; src: url('https://xiongusf.github.io/x.ttf') format('truetype');} 
+@font-face { font-family: 'ymirage'; src: url('https://xiongusf.github.io/y.ttf') format('truetype');} 
+@font-face { font-family: 'zmirage'; src: url('https://xiongusf.github.io/z.ttf') format('truetype');} 
+@font-face { font-family: 'emptymirage'; src: url('https://xiongusf.github.io/empty.ttf') format('truetype');} 
+@font-face { font-family: 'mirage0'; src: url('https://xiongusf.github.io/0.ttf') format('truetype');}
+@font-face { font-family: 'mirage1'; src: url('https://xiongusf.github.io/1.ttf') format('truetype');}
+@font-face { font-family: 'mirage2'; src: url('https://xiongusf.github.io/2.ttf') format('truetype');}
+@font-face { font-family: 'mirage3'; src: url('https://xiongusf.github.io/3.ttf') format('truetype');}
+@font-face { font-family: 'mirage4'; src: url('https://xiongusf.github.io/4.ttf') format('truetype');}
+@font-face { font-family: 'mirage5'; src: url('https://xiongusf.github.io/5.ttf') format('truetype');}
+@font-face { font-family: 'mirage6'; src: url('https://xiongusf.github.io/6.ttf') format('truetype');}
+@font-face { font-family: 'mirage7'; src: url('https://xiongusf.github.io/7.ttf') format('truetype');}
+@font-face { font-family: 'mirage8'; src: url('https://xiongusf.github.io/8.ttf') format('truetype');}
+@font-face { font-family: 'mirage9'; src: url('https://xiongusf.github.io/9.ttf') format('truetype');}
+@font-face { font-family: 'Ampersandmirage'; src: url('https://xiongusf.github.io/Ampersand.ttf') format('truetype');}
+@font-face { font-family: 'Asciicircummirage'; src: url('https://xiongusf.github.io/Asciicircum.ttf') format('truetype');}
+@font-face { font-family: 'Asteriskmirage'; src: url('https://xiongusf.github.io/Asterisk.ttf') format('truetype');}
+@font-face { font-family: 'Atmirage'; src: url('https://xiongusf.github.io/At.ttf') format('truetype');}
+@font-face { font-family: 'Backslashmirage'; src: url('https://xiongusf.github.io/Backslash.ttf') format('truetype');}
+@font-face { font-family: 'Bracketleftmirage'; src: url('https://xiongusf.github.io/Bracketleft.ttf') format('truetype');}
+@font-face { font-family: 'Bracketrightmirage'; src: url('https://xiongusf.github.io/Bracketright.ttf') format('truetype');}
+@font-face { font-family: 'Colonmirage'; src: url('https://xiongusf.github.io/Colon.ttf') format('truetype');} 
+@font-face { font-family: 'commamirage'; src: url('https://xiongusf.github.io/comma.ttf') format('truetype');} 
+@font-face { font-family: 'Dollarmirage'; src: url('https://xiongusf.github.io/Dollar.ttf') format('truetype');} 
+@font-face { font-family: 'Equalmirage'; src: url('https://xiongusf.github.io/Equal.ttf') format('truetype');} 
+@font-face { font-family: 'Exclammirage'; src: url('https://xiongusf.github.io/Exclam.ttf') format('truetype');} 
+@font-face { font-family: 'Greatermirage'; src: url('https://xiongusf.github.io/Greater.ttf') format('truetype');} 
+@font-face { font-family: 'Lessmirage'; src: url('https://xiongusf.github.io/Less.ttf') format('truetype');} 
+@font-face { font-family: 'Minusmirage'; src: url('https://xiongusf.github.io/Minus.ttf') format('truetype');} 
+@font-face { font-family: 'Numbersignmirage'; src: url('https://xiongusf.github.io/Numbersign.ttf') format('truetype');} 
+@font-face { font-family: 'Parennleftmirage'; src: url('https://xiongusf.github.io/Parennleft.ttf') format('truetype');} 
+@font-face { font-family: 'Parenrightmirage'; src: url('https://xiongusf.github.io/Parenright.ttf') format('truetype');} 
+@font-face { font-family: 'Percentmirage'; src: url('https://xiongusf.github.io/Percent.ttf') format('truetype');} 
+@font-face { font-family: 'Periodmirage'; src: url('https://xiongusf.github.io/Period.ttf') format('truetype');} 
+@font-face { font-family: 'Plusmirage'; src: url('https://xiongusf.github.io/Plus.ttf') format('truetype');} 
+@font-face { font-family: 'Questionmirage'; src: url('https://xiongusf.github.io/Question.ttf') format('truetype');} 
+@font-face { font-family: 'Quotedblmirage'; src: url('https://xiongusf.github.io/Quotedbl.ttf') format('truetype');} 
+@font-face { font-family: 'Quotesinglemirage'; src: url('https://xiongusf.github.io/Quotesingle.ttf') format('truetype');} 
+@font-face { font-family: 'Semicolonmirage'; src: url('https://xiongusf.github.io/Semicolon.ttf') format('truetype');} 
+@font-face { font-family: 'Slashmirage'; src: url('https://xiongusf.github.io/Slash.ttf') format('truetype');} 
+@font-face { font-family: 'Underscoremirage'; src: url('https://xiongusf.github.io/Underscore.ttf') format('truetype');} 
+
+
+#mirage0{font-family:'mirage0';}
+#mirage1{font-family:'mirage1';}
+#mirage2{font-family:'mirage2';}
+#mirage3{font-family:'mirage3';}
+#mirage4{font-family:'mirage4';}
+#mirage5{font-family:'mirage5';}
+#mirage6{font-family:'mirage6';}
+#mirage7{font-family:'mirage7';}
+#mirage8{font-family:'mirage8';}
+#mirage9{font-family:'mirage9';}
+#Ampersandmirage{font-family:'Ampersandmirage';}
+#Asciicircummirage{font-family:'Asciicircummirage';}
+#Asteriskmirage{font-family:'Asteriskmirage';}
+#Atmirage{font-family:'Atmirage';}
+#Backslashmirage{font-family:'Backslashmirage';}
+#Bracketleftmirage{font-family:'Bracketleftmirage';}
+#Bracketrightmirage{font-family:'Bracketrightmirage';}
+#Colonmirage{font-family:'Colonmirage';}
+#commamirage{font-family:'commamirage';}
+#Dollarmirage{font-family:'Dollarmirage';}
+#Equalmirage{font-family:'Equalmirage';}
+#Exclammirage{font-family:'Exclammirage';}
+#Greatermirage{font-family:'Greatermirage';}
+#Lessmirage{font-family:'Lessmirage';}
+#Minusmirage{font-family:'Minusmirage';}
+#Numbersignmirage{font-family:'Numbersignmirage';}
+#Parennleftmirage{font-family:'Parennleftmirage';}
+#Parenrightmirage{font-family:'Parenrightmirage';}
+#Percentmirage{font-family:'Percentmirage';}
+#Periodmirage{font-family:'Periodmirage';}
+#Plusmirage{font-family:'Plusmirage';}
+#Questionmirage{font-family:'Questionmirage';}
+#Quotedblmirage{font-family:'Quotedblmirage';}
+#Quotesinglemirage{font-family:'Quotesinglemirage';}
+#Semicolonmirage{font-family:'Semicolonmirage';}
+#Slashmirage{font-family:'Slashmirage';}
+#Underscoremirage{font-family:'Underscoremirage';}
+#emptymirage{font-family:'emptymirage';font-size: 8px;font-weight:bold;}
+#AAmirage{font-family:'AAmirage';}
+#BBmirage{font-family:'BBmirage';}
+#CCmirage{font-family:'CCmirage';}
+#DDmirage{font-family:'DDmirage';}
+#EEmirage{font-family:'EEmirage';}
+#FFmirage{font-family:'FFmirage';}
+#GGmirage{font-family:'GGmirage';}
+#HHmirage{font-family:'HHmirage';}
+#IImirage{font-family:'IImirage';}
+#JJmirage{font-family:'JJmirage';}
+#KKmirage{font-family:'KKmirage';}
+#LLmirage{font-family:'LLmirage';}
+#MMmirage{font-family:'MMmirage';}
+#NNmirage{font-family:'NNmirage';}
+#OOmirage{font-family:'OOmirage';}
+#PPmirage{font-family:'PPmirage';}
+#QQmirage{font-family:'QQmirage';}
+#RRmirage{font-family:'RRmirage';}
+#SSmirage{font-family:'SSmirage';}
+#TTmirage{font-family:'TTmirage';}
+#UUmirage{font-family:'UUmirage';}
+#VVmirage{font-family:'VVmirage';}
+#WWmirage{font-family:'WWmirage';}
+#XXmirage{font-family:'XXmirage';}
+#YYmirage{font-family:'YYmirage';}
+#ZZmirage{font-family:'ZZmirage';}
+#amirage{font-family:'amirage';}
+#bmirage{font-family:'bmirage';}
+#cmirage{font-family:'cmirage';}
+#dmirage{font-family:'dmirage';}
+#emirage{font-family:'emirage';}
+#fmirage{font-family:'fmirage';}
+#gmirage{font-family:'gmirage';}
+#hmirage{font-family:'hmirage';}
+#imirage{font-family:'imirage';}
+#jmirage{font-family:'jmirage';}
+#kmirage{font-family:'kmirage';}
+#lmirage{font-family:'lmirage';}
+#mmirage{font-family:'mmirage';}
+#nmirage{font-family:'nmirage';}
+#omirage{font-family:'omirage';}
+#pmirage{font-family:'pmirage';}
+#qmirage{font-family:'qmirage';}
+#rmirage{font-family:'rmirage';}
+#smirage{font-family:'smirage';}
+#tmirage{font-family:'tmirage';}
+#umirage{font-family:'umirage';}
+#vmirage{font-family:'vmirage';}
+#wmirage{font-family:'wmirage';}
+#xmirage{font-family:'xmirage';}
+#ymirage{font-family:'ymirage';}
+#zmirage{font-family:'zmirage';}
